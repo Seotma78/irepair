@@ -1,0 +1,603 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand: #DF0C88;
+  --color-brand-hover: #C50875;
+  --color-brand-active: #A90663;
+  --color-brand-light: #FDF2F8;
+  --color-brand-border: #FBCFE8;
+  --color-brand-muted: #F472B6;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-heading: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --container-7xl: 90rem;
+}
+
+@layer base {
+  html, body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+
+  /* Enforce requested font and font-weight increased by 100 to 700 */
+  h1, h2, h3, h4, h5, h6, .font-heading {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+
+  /* Headings font-weight set to 700 (increased by 100) */
+  h1, h2, h3, h4, h5, h6, .font-heading {
+    font-weight: 700;
+  }
+
+  /* Harmonious heading sizes */
+  h1 {
+    font-size: clamp(1.65rem, 3.2vw, 2.25rem);
+    line-height: 1.25;
+  }
+  h2 {
+    font-size: clamp(1.35rem, 2.4vw, 1.75rem);
+    line-height: 1.3;
+  }
+  h3 {
+    font-size: clamp(1.1rem, 1.6vw, 1.35rem);
+    line-height: 1.35;
+  }
+  h4 {
+    font-size: clamp(0.95rem, 1.2vw, 1.15rem);
+    line-height: 1.4;
+  }
+}
+
+/* Custom scrollbar for desktop */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Utilities for hidden scrollbars with touch momentum */
+.scrollbar-none::-webkit-scrollbar,
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none,
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Custom Leaflet Map Pin Styles */
+@keyframes pin-pulse {
+  0% {
+    transform: rotate(-45deg) scale(1);
+    box-shadow: 0 0 0 0 rgba(223, 12, 136, 0.6);
+  }
+  70% {
+    transform: rotate(-45deg) scale(1.08);
+    box-shadow: 0 0 0 10px rgba(223, 12, 136, 0);
+  }
+  100% {
+    transform: rotate(-45deg) scale(1);
+    box-shadow: 0 0 0 0 rgba(223, 12, 136, 0);
+  }
+}
+
+.custom-map-pin {
+  background: transparent;
+  border: none;
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 1rem !important;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1) !important;
+  border: 1px solid #e2e8f0 !important;
+  padding: 4px !important;
+}
+
+.leaflet-popup-tip {
+  background: #ffffff !important;
+}
+
+/* Marquee infinite scroll ticker */
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 28s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* ==========================================================================
+   Blog Article Content Typography, Tables, Section Breakers & Spacers
+   ========================================================================== */
+.blog-article-content {
+  color: #334155;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* Headings with clear hierarchy and generous breathing space */
+.blog-article-content h2,
+.blog-article-content .wp-block-heading:is(h2) {
+  font-size: clamp(1.4rem, 2.5vw, 1.85rem) !important;
+  font-weight: 900 !important;
+  color: #0f172a !important;
+  letter-spacing: -0.025em !important;
+  line-height: 1.3 !important;
+  margin-top: 2.75rem !important;
+  margin-bottom: 1.125rem !important;
+  padding-left: 0.875rem !important;
+  border-left: 4px solid #DF0C88 !important;
+}
+
+.blog-article-content h2:first-child,
+.blog-article-content .wp-block-heading:is(h2):first-child {
+  margin-top: 0.5rem !important;
+}
+
+.blog-article-content h3,
+.blog-article-content .wp-block-heading:is(h3) {
+  font-size: clamp(1.15rem, 1.8vw, 1.4rem) !important;
+  font-weight: 800 !important;
+  color: #0f172a !important;
+  letter-spacing: -0.02em !important;
+  line-height: 1.35 !important;
+  margin-top: 2.25rem !important;
+  margin-bottom: 0.875rem !important;
+}
+
+.blog-article-content h4,
+.blog-article-content .wp-block-heading:is(h4) {
+  font-size: 1.1rem !important;
+  font-weight: 700 !important;
+  color: #1e293b !important;
+  margin-top: 1.75rem !important;
+  margin-bottom: 0.625rem !important;
+}
+
+/* Paragraphs & Text */
+.blog-article-content p,
+.blog-article-content .wp-block-paragraph {
+  font-size: 1rem;
+  line-height: 1.85;
+  color: #334155;
+  margin-bottom: 1.25rem;
+}
+
+.blog-article-content p strong,
+.blog-article-content strong,
+.blog-article-content b {
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.blog-article-content a {
+  color: #DF0C88;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: #fbcfe8;
+  text-underline-offset: 3px;
+  transition: color 0.15s ease, text-decoration-color 0.15s ease;
+}
+
+.blog-article-content a:hover {
+  color: #C50875;
+  text-decoration-color: #DF0C88;
+}
+
+/* Section Breakers (HR) with decorative diamond accent */
+.blog-article-content hr,
+.blog-article-content hr.wp-block-separator,
+.blog-article-content .wp-block-separator {
+  border: 0 !important;
+  height: 1px !important;
+  background: #e2e8f0 !important;
+  margin: 3rem 0 !important;
+  position: relative !important;
+  overflow: visible !important;
+  display: block !important;
+  width: 100% !important;
+}
+
+.blog-article-content hr::after,
+.blog-article-content hr.wp-block-separator::after,
+.blog-article-content .wp-block-separator::after {
+  content: "◆";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  padding: 0 0.875rem;
+  color: #DF0C88;
+  font-size: 0.75rem;
+  line-height: 1;
+}
+
+/* Tables with responsive horizontal scroll container */
+.blog-article-content figure.wp-block-table,
+.blog-article-content .wp-block-table {
+  margin: 2.25rem 0 !important;
+  overflow-x: auto !important;
+  border-radius: 1rem !important;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px -1px rgba(0, 0, 0, 0.05) !important;
+  border: 1px solid #e2e8f0 !important;
+  background: #ffffff !important;
+}
+
+.blog-article-content table {
+  width: 100% !important;
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+  text-align: left !important;
+  font-size: 0.875rem !important;
+  line-height: 1.5 !important;
+}
+
+.blog-article-content thead {
+  background: #0f172a !important;
+  color: #ffffff !important;
+}
+
+.blog-article-content th {
+  padding: 0.875rem 1.125rem !important;
+  font-weight: 700 !important;
+  font-size: 0.8125rem !important;
+  letter-spacing: 0.025em !important;
+  text-transform: uppercase !important;
+  color: #ffffff !important;
+  border-bottom: 2px solid #334155 !important;
+  white-space: nowrap !important;
+}
+
+.blog-article-content tbody tr {
+  border-bottom: 1px solid #f1f5f9 !important;
+  transition: background-color 0.15s ease !important;
+}
+
+.blog-article-content tbody tr:nth-child(even) {
+  background-color: #f8fafc !important;
+}
+
+.blog-article-content tbody tr:hover {
+  background-color: #fdf2f8 !important;
+}
+
+.blog-article-content td {
+  padding: 0.875rem 1.125rem !important;
+  color: #334155 !important;
+  border-bottom: 1px solid #e2e8f0 !important;
+  border-right: 1px solid #f1f5f9 !important;
+  vertical-align: top !important;
+}
+
+.blog-article-content td:last-child {
+  border-right: none !important;
+}
+
+.blog-article-content tbody tr:last-child td {
+  border-bottom: none !important;
+}
+
+.blog-article-content td a {
+  color: #DF0C88 !important;
+  font-weight: 600 !important;
+  text-decoration: underline !important;
+  text-decoration-color: #fbcfe8 !important;
+  text-underline-offset: 3px !important;
+}
+
+.blog-article-content td a:hover {
+  color: #C50875 !important;
+  text-decoration-color: #DF0C88 !important;
+}
+
+/* Lists with proper bullets and indentation */
+.blog-article-content ul,
+.blog-article-content ul.wp-block-list {
+  list-style-type: disc !important;
+  padding-left: 1.5rem !important;
+  margin-top: 0.75rem !important;
+  margin-bottom: 1.5rem !important;
+  color: #334155 !important;
+}
+
+.blog-article-content ul > li::marker,
+.blog-article-content ul.wp-block-list > li::marker {
+  color: #DF0C88 !important;
+}
+
+.blog-article-content ol,
+.blog-article-content ol.wp-block-list {
+  list-style-type: decimal !important;
+  padding-left: 1.5rem !important;
+  margin-top: 0.75rem !important;
+  margin-bottom: 1.5rem !important;
+  color: #334155 !important;
+}
+
+.blog-article-content ol > li::marker,
+.blog-article-content ol.wp-block-list > li::marker {
+  color: #0f172a !important;
+  font-weight: 700 !important;
+}
+
+.blog-article-content li {
+  font-size: 0.975rem !important;
+  line-height: 1.75 !important;
+  margin-bottom: 0.5rem !important;
+  padding-left: 0.25rem !important;
+}
+
+/* Blockquotes */
+.blog-article-content blockquote,
+.blog-article-content .wp-block-quote {
+  border-left: 4px solid #DF0C88 !important;
+  background: #f8fafc !important;
+  border-radius: 0 1rem 1rem 0 !important;
+  padding: 1.25rem 1.5rem !important;
+  margin: 2rem 0 !important;
+  font-style: italic !important;
+  color: #334155 !important;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.04) !important;
+}
+
+/* Content Images & Captions */
+.blog-article-content img {
+  border-radius: 1rem !important;
+  max-width: 100% !important;
+  height: auto !important;
+  margin: 1.75rem 0 !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05) !important;
+}
+
+.blog-article-content figcaption {
+  font-size: 0.75rem !important;
+  color: #64748b !important;
+  text-align: center !important;
+  margin-top: -0.75rem !important;
+  margin-bottom: 1.5rem !important;
+  font-style: italic !important;
+}
+
+/* Gutenberg Buttons */
+.blog-article-content .wp-block-buttons {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 0.75rem !important;
+  margin: 2rem 0 !important;
+}
+
+.blog-article-content .wp-block-button__link {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: #0f172a !important;
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  font-size: 0.875rem !important;
+  padding: 0.625rem 1.375rem !important;
+  border-radius: 9999px !important;
+  text-decoration: none !important;
+  transition: all 0.2s ease !important;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08) !important;
+}
+
+.blog-article-content .wp-block-button__link:hover {
+  background: #DF0C88 !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 8px 0 rgba(223, 12, 136, 0.25) !important;
+}
+
+/* ==========================================================================
+   Product Short Description Dedicated Formatting Styles
+   Restores formatting removed by CSS reset while maintaining container bounds
+   ========================================================================== */
+.product-short-description {
+  font-size: 0.875rem;
+  line-height: 1.625;
+  color: #334155;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.product-short-description > *:first-child {
+  margin-top: 0 !important;
+}
+
+.product-short-description > *:last-child {
+  margin-bottom: 0 !important;
+}
+
+.product-short-description p {
+  margin-bottom: 0.75rem;
+  line-height: 1.625;
+  color: #334155;
+}
+
+.product-short-description strong,
+.product-short-description b {
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.product-short-description em,
+.product-short-description i {
+  font-style: italic;
+}
+
+.product-short-description u {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.product-short-description s,
+.product-short-description strike,
+.product-short-description del {
+  text-decoration: line-through;
+  opacity: 0.8;
+}
+
+.product-short-description ul {
+  list-style-type: disc !important;
+  padding-left: 1.25rem !important;
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.75rem !important;
+}
+
+.product-short-description ol {
+  list-style-type: decimal !important;
+  padding-left: 1.25rem !important;
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.75rem !important;
+}
+
+.product-short-description li {
+  margin-bottom: 0.375rem;
+  color: #334155;
+  line-height: 1.5;
+}
+
+.product-short-description li::marker {
+  color: #0f172a;
+  font-weight: 600;
+}
+
+/* Nested lists */
+.product-short-description ul ul {
+  list-style-type: circle !important;
+  margin-top: 0.25rem !important;
+  margin-bottom: 0.25rem !important;
+  padding-left: 1.125rem !important;
+}
+
+.product-short-description ol ol {
+  list-style-type: lower-alpha !important;
+  margin-top: 0.25rem !important;
+  margin-bottom: 0.25rem !important;
+  padding-left: 1.125rem !important;
+}
+
+.product-short-description a {
+  color: #DF0C88;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: #fbcfe8;
+  text-underline-offset: 2px;
+  transition: color 0.15s ease, text-decoration-color 0.15s ease;
+}
+
+.product-short-description a:hover {
+  color: #C50875;
+  text-decoration-color: #DF0C88;
+}
+
+.product-short-description blockquote {
+  border-left: 3px solid #DF0C88;
+  padding-left: 0.75rem;
+  font-style: italic;
+  color: #475569;
+  margin: 0.75rem 0;
+  background-color: #fdf2f8;
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+  border-radius: 0 0.375rem 0.375rem 0;
+}
+
+.product-short-description sub,
+.product-short-description sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+.product-short-description sup {
+  top: -0.5em;
+}
+
+.product-short-description sub {
+  bottom: -0.25em;
+}
+
+.product-short-description hr {
+  border: 0;
+  border-top: 1px solid #e2e8f0;
+  margin: 0.875rem 0;
+}
+
+/* Headings scaled proportionally within summary container */
+.product-short-description h1,
+.product-short-description h2,
+.product-short-description h3,
+.product-short-description h4,
+.product-short-description h5,
+.product-short-description h6 {
+  font-weight: 700;
+  color: #0f172a;
+  margin-top: 0.75rem;
+  margin-bottom: 0.375rem;
+  line-height: 1.35;
+}
+
+.product-short-description h1 { font-size: 1.125rem; }
+.product-short-description h2 { font-size: 1.05rem; }
+.product-short-description h3 { font-size: 0.95rem; }
+.product-short-description h4,
+.product-short-description h5,
+.product-short-description h6 { font-size: 0.875rem; }
+
+/* Responsive tables & images: prevent horizontal overflow */
+.product-short-description table {
+  max-width: 100%;
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.75rem 0;
+  display: block;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.product-short-description th,
+.product-short-description td {
+  border: 1px solid #e2e8f0;
+  padding: 0.45rem 0.65rem;
+  text-align: left;
+  font-size: 0.8125rem;
+}
+
+.product-short-description th {
+  background-color: #f8fafc;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.product-short-description img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  display: inline-block;
+  margin: 0.5rem 0;
+}
+
+
+

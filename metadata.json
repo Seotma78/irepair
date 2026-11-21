@@ -1,0 +1,8 @@
+{
+  "name": "Remix Remix Remix 21-11-26  iRepair Mobiles UK - Express Repairs \u0026 Refurbished Store",
+  "description": "irepair-mobiles.co.uk featuring express mobile phone and laptop repair booking, refurbished device shop, store locations, and real-time repair tracking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,7029 @@
+[
+  {
+    "id": 1479,
+    "name": "15W Chargers",
+    "slug": "15w-chargers",
+    "parent": 1374,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 1,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1479",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1374"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1470,
+    "name": "20W Chargers",
+    "slug": "20w-chargers",
+    "parent": 1374,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 1,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1470",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1374"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1473,
+    "name": "25W Chargers",
+    "slug": "25w-chargers",
+    "parent": 1374,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 2,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1473",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1374"
+        }
+      ]
+    }
+  },
+  {
+    "id": 62,
+    "name": "Accessories",
+    "slug": "accessories",
+    "parent": 0,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 34,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/62",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ]
+    }
+  },
+  {
+    "id": 113,
+    "name": "Alcatel",
+    "slug": "alcatel",
+    "parent": 1375,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 1,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/113",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1375"
+        }
+      ]
+    }
+  },
+  {
+    "id": 133,
+    "name": "Alcatel Tabs",
+    "slug": "alcatel-tabs",
+    "parent": 53,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/133",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/53"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1428,
+    "name": "Alcatel V3 Series",
+    "slug": "alcatel-v3-series",
+    "parent": 113,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1428",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/113"
+        }
+      ]
+    }
+  },
+  {
+    "id": 134,
+    "name": "Amazon Tablets",
+    "slug": "amazon-tablets",
+    "parent": 53,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/134",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/53"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1461,
+    "name": "Apple Accessories",
+    "slug": "apple-accessories",
+    "parent": 62,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 3,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1461",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/62"
+        }
+      ]
+    }
+  },
+  {
+    "id": 130,
+    "name": "Apple iPad",
+    "slug": "apple-ipad",
+    "parent": 53,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 6,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/130",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/53"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1331,
+    "name": "Apple MacBooks",
+    "slug": "apple-macbooks",
+    "parent": 55,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 1,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1331",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/55"
+        }
+      ]
+    }
+  },
+  {
+    "id": 136,
+    "name": "Apple Watches",
+    "slug": "apple-watches",
+    "parent": 1461,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 2,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/136",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1461"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1335,
+    "name": "Asus",
+    "slug": "asus",
+    "parent": 55,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1335",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/55"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1469,
+    "name": "Audio Adapters",
+    "slug": "audio-adapters",
+    "parent": 62,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 1,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1469",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/62"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1405,
+    "name": "Battery Cases",
+    "slug": "battery-cases",
+    "parent": 149,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1405",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/149"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1337,
+    "name": "Business Laptops",
+    "slug": "business-laptops",
+    "parent": 55,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 1,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1337",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/55"
+        }
+      ]
+    }
+  },
+  {
+    "id": 897,
+    "name": "Car Charger",
+    "slug": "car-charger",
+    "parent": 1374,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 2,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/897",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1374"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1412,
+    "name": "Car Mobile Holders",
+    "slug": "car-mobile-holders",
+    "parent": 801,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 1,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1412",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/801"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1341,
+    "name": "Chargers",
+    "slug": "laptop-chargers",
+    "parent": 1339,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1341",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1339"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1374,
+    "name": "Chargers & cables",
+    "slug": "chargers-and-cables",
+    "parent": 62,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 18,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1374",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/62"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1415,
+    "name": "Compact Power Banks",
+    "slug": "compact-power-banks",
+    "parent": 128,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 2,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1415",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/128"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1332,
+    "name": "Dell",
+    "slug": "dell",
+    "parent": 55,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1332",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/55"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1413,
+    "name": "Desk & Tabletop Holders",
+    "slug": "desk-and-tabletop-holders",
+    "parent": 801,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1413",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/801"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1391,
+    "name": "Docker Station",
+    "slug": "docker-station",
+    "parent": 1339,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1391",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1339"
+        }
+      ]
+    }
+  },
+  {
+    "id": 50,
+    "name": "Doro",
+    "slug": "doro",
+    "parent": 1375,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 4,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/50",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1375"
+        }
+      ]
+    }
+  },
+  {
+    "id": 68,
+    "name": "Earbuds",
+    "slug": "earbuds",
+    "parent": 59,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 5,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/68",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/59"
+        }
+      ]
+    }
+  },
+  {
+    "id": 59,
+    "name": "Earbuds & Headphones",
+    "slug": "earbuds-and-headphones",
+    "parent": 62,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 6,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/59",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/62"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1340,
+    "name": "External Hard Drive",
+    "slug": "external-hard-drive",
+    "parent": 1339,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1340",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1339"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1393,
+    "name": "External SSDs",
+    "slug": "external-ssds",
+    "parent": 1339,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1393",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1339"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1420,
+    "name": "For Mobile Phones",
+    "slug": "for-mobile-phones",
+    "parent": 124,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1420",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/124"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1422,
+    "name": "For Smartwatches",
+    "slug": "for-smartwatches",
+    "parent": 124,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1422",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/124"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1421,
+    "name": "For Tablets & iPads",
+    "slug": "for-tablets-and-ipads",
+    "parent": 124,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1421",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/124"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1347,
+    "name": "Gaming Accessories",
+    "slug": "gaming-accessories",
+    "parent": 0,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1347",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1381,
+    "name": "Gaming Controllers",
+    "slug": "gaming-controllers",
+    "parent": 1347,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1381",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1347"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1378,
+    "name": "Gaming Headsets",
+    "slug": "gaming-headsets",
+    "parent": 1347,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1378",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1347"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1379,
+    "name": "Gaming Keyboards",
+    "slug": "gaming-keyboards",
+    "parent": 1347,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1379",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1347"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1336,
+    "name": "Gaming Laptops",
+    "slug": "gaming-laptops",
+    "parent": 55,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1336",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/55"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1380,
+    "name": "Gaming Mice",
+    "slug": "gaming-mice",
+    "parent": 1347,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1380",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1347"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1425,
+    "name": "Gaming Speakers",
+    "slug": "gaming-speakers",
+    "parent": 996,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1425",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/996"
+        }
+      ]
+    }
+  },
+  {
+    "id": 119,
+    "name": "Google Pixel",
+    "slug": "google-pixel",
+    "parent": 1375,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/119",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1375"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1397,
+    "name": "Google Pixel Cases",
+    "slug": "google-pixel-cases",
+    "parent": 149,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1397",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/149"
+        }
+      ]
+    }
+  },
+  {
+    "id": 116,
+    "name": "Google Pixel Parts",
+    "slug": "google-pixel-parts",
+    "parent": 80,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/116",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/80"
+        }
+      ]
+    }
+  },
+  {
+    "id": 129,
+    "name": "Heaphones",
+    "slug": "heaphones",
+    "parent": 59,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 2,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/129",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/59"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1333,
+    "name": "HP",
+    "slug": "hp",
+    "parent": 55,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1333",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/55"
+        }
+      ]
+    }
+  },
+  {
+    "id": 95,
+    "name": "Huawei",
+    "slug": "huawei",
+    "parent": 1375,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 1,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/95",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1375"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1401,
+    "name": "Huawei Cases",
+    "slug": "huawei-cases",
+    "parent": 149,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1401",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/149"
+        }
+      ]
+    }
+  },
+  {
+    "id": 98,
+    "name": "Huawei Meta Series",
+    "slug": "huawei-meta-series",
+    "parent": 95,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 1,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/98",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/95"
+        }
+      ]
+    }
+  },
+  {
+    "id": 97,
+    "name": "Huawei Nova Series",
+    "slug": "huawei-nova-series",
+    "parent": 95,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/97",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/95"
+        }
+      ]
+    }
+  },
+  {
+    "id": 96,
+    "name": "Huawei P Series",
+    "slug": "huawei-p-series",
+    "parent": 95,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/96",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/95"
+        }
+      ]
+    }
+  },
+  {
+    "id": 142,
+    "name": "Huawei Parts",
+    "slug": "huawei-parts",
+    "parent": 80,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/142",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/80"
+        }
+      ]
+    }
+  },
+  {
+    "id": 99,
+    "name": "Huawei Y Series",
+    "slug": "huawei-y-series",
+    "parent": 95,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/99",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/95"
+        }
+      ]
+    }
+  },
+  {
+    "id": 145,
+    "name": "iPad Parts",
+    "slug": "ipad-parts",
+    "parent": 144,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/145",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/144"
+        }
+      ]
+    }
+  },
+  {
+    "id": 39,
+    "name": "iPhone 11 Series",
+    "slug": "iphone-11-series",
+    "parent": 38,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 6,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/39",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/38"
+        }
+      ]
+    }
+  },
+  {
+    "id": 90,
+    "name": "iPhone 12 Series",
+    "slug": "iphone-12-series",
+    "parent": 38,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 8,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/90",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/38"
+        }
+      ]
+    }
+  },
+  {
+    "id": 91,
+    "name": "iPhone 13 Series",
+    "slug": "iphone-13-series",
+    "parent": 38,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 8,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/91",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/38"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1066,
+    "name": "iPhone 14 Series",
+    "slug": "iphone-14-series",
+    "parent": 38,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 7,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1066",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/38"
+        }
+      ]
+    }
+  },
+  {
+    "id": 709,
+    "name": "iPhone 15 Series",
+    "slug": "iphone-15-series",
+    "parent": 38,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 4,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/709",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/38"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1429,
+    "name": "iPhone 16 Series",
+    "slug": "iphone-16-series",
+    "parent": 38,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 4,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1429",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/38"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1430,
+    "name": "iPhone 17 Series",
+    "slug": "iphone-17-series",
+    "parent": 38,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 4,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1430",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/38"
+        }
+      ]
+    }
+  },
+  {
+    "id": 88,
+    "name": "iPhone 5 Series",
+    "slug": "iphone-5-series",
+    "parent": 38,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/88",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/38"
+        }
+      ]
+    }
+  },
+  {
+    "id": 42,
+    "name": "iPhone 6 Series",
+    "slug": "iphone-6-series",
+    "parent": 38,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 1,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/42",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/38"
+        }
+      ]
+    }
+  },
+  {
+    "id": 41,
+    "name": "iPhone 7 Series",
+    "slug": "iphone-7-series",
+    "parent": 38,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 3,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/41",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/38"
+        }
+      ]
+    }
+  },
+  {
+    "id": 89,
+    "name": "iPhone 8 Series",
+    "slug": "iphone-8-series",
+    "parent": 38,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 3,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/89",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/38"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1395,
+    "name": "iPhone Cases",
+    "slug": "iphone-cases",
+    "parent": 149,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 1,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1395",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/149"
+        }
+      ]
+    }
+  },
+  {
+    "id": 114,
+    "name": "iPhone Parts",
+    "slug": "iphone-parts",
+    "parent": 80,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/114",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/80"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1468,
+    "name": "iPhone SE Series",
+    "slug": "iphone-se-series",
+    "parent": 38,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 3,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1468",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/38"
+        }
+      ]
+    }
+  },
+  {
+    "id": 40,
+    "name": "iPhone X Series",
+    "slug": "iphone-x-series",
+    "parent": 38,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 8,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/40",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/38"
+        }
+      ]
+    }
+  },
+  {
+    "id": 38,
+    "name": "iPhones",
+    "slug": "iphones",
+    "parent": 1375,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 59,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/38",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1375"
+        }
+      ]
+    }
+  },
+  {
+    "id": 61,
+    "name": "Joystick",
+    "slug": "joystick",
+    "parent": 1381,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/61",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1381"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1403,
+    "name": "Kickstand Cases",
+    "slug": "kickstand-cases",
+    "parent": 149,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1403",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/149"
+        }
+      ]
+    }
+  },
+  {
+    "id": 55,
+    "name": "Laptop & Pc",
+    "slug": "laptop-and-pc",
+    "parent": 0,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 2,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/55",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1339,
+    "name": "Laptop Accessories",
+    "slug": "laptop-accessories",
+    "parent": 0,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1339",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1392,
+    "name": "Laptop Cooling Pads",
+    "slug": "laptop-cooling-pads",
+    "parent": 1339,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1392",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1339"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1411,
+    "name": "Leather Cases",
+    "slug": "leather-cases",
+    "parent": 149,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1411",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/149"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1334,
+    "name": "Lenovo",
+    "slug": "lenovo",
+    "parent": 55,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1334",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/55"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1404,
+    "name": "MagSafe Cases",
+    "slug": "magsafe-cases",
+    "parent": 149,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1404",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/149"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1424,
+    "name": "Matte Screen Protectors",
+    "slug": "matte-screen-protectors",
+    "parent": 124,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1424",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/124"
+        }
+      ]
+    }
+  },
+  {
+    "id": 132,
+    "name": "Microsoft Surface",
+    "slug": "microsoft-surface",
+    "parent": 53,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/132",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/53"
+        }
+      ]
+    }
+  },
+  {
+    "id": 148,
+    "name": "Microsoft Surface Parts",
+    "slug": "microsoft-surface-parts",
+    "parent": 144,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/148",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/144"
+        }
+      ]
+    }
+  },
+  {
+    "id": 126,
+    "name": "Mobile Cables",
+    "slug": "mobile-cables",
+    "parent": 1374,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 6,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/126",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1374"
+        }
+      ]
+    }
+  },
+  {
+    "id": 125,
+    "name": "Mobile Charger",
+    "slug": "mobile-charger",
+    "parent": 1374,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 8,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/125",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1374"
+        }
+      ]
+    }
+  },
+  {
+    "id": 801,
+    "name": "Mobile Holders",
+    "slug": "mobile-holders",
+    "parent": 62,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 4,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/801",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/62"
+        }
+      ]
+    }
+  },
+  {
+    "id": 149,
+    "name": "Mobile Phone Cases",
+    "slug": "mobile-phone-cases",
+    "parent": 62,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 1,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/149",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/62"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1375,
+    "name": "Mobile Phones",
+    "slug": "mobile-phones",
+    "parent": 0,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 130,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1375",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ]
+    }
+  },
+  {
+    "id": 103,
+    "name": "Moto E Series",
+    "slug": "moto-e-series",
+    "parent": 100,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/103",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/100"
+        }
+      ]
+    }
+  },
+  {
+    "id": 102,
+    "name": "Moto G Series",
+    "slug": "moto-g-series",
+    "parent": 100,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 2,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/102",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/100"
+        }
+      ]
+    }
+  },
+  {
+    "id": 101,
+    "name": "Moto Nexus Series",
+    "slug": "motorola-nexus-series",
+    "parent": 100,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/101",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/100"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1431,
+    "name": "Moto Razr Series",
+    "slug": "moto-razr-series",
+    "parent": 100,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1431",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/100"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1432,
+    "name": "Moto ThinkPhone Series",
+    "slug": "moto-thinkphone-series",
+    "parent": 100,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1432",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/100"
+        }
+      ]
+    }
+  },
+  {
+    "id": 100,
+    "name": "Motorola",
+    "slug": "motorola",
+    "parent": 1375,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 2,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/100",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1375"
+        }
+      ]
+    }
+  },
+  {
+    "id": 214,
+    "name": "New Phones",
+    "slug": "new-phones",
+    "parent": 1375,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 10,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/214",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1375"
+        }
+      ]
+    }
+  },
+  {
+    "id": 43,
+    "name": "Nokia",
+    "slug": "nokia",
+    "parent": 1375,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 5,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/43",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1375"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1433,
+    "name": "Nokia G Series",
+    "slug": "nokia-g-series",
+    "parent": 43,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1433",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/43"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1434,
+    "name": "Nokia X Series",
+    "slug": "nokia-x-series",
+    "parent": 43,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1434",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/43"
+        }
+      ]
+    }
+  },
+  {
+    "id": 111,
+    "name": "OnePlus",
+    "slug": "oneplus",
+    "parent": 1375,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 1,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/111",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1375"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1436,
+    "name": "OnePlus Ace Series",
+    "slug": "oneplus-ace-series",
+    "parent": 111,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1436",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/111"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1398,
+    "name": "OnePlus Cases",
+    "slug": "oneplus-cases",
+    "parent": 149,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1398",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/149"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1435,
+    "name": "OnePlus Fold Series",
+    "slug": "oneplus-fold-series",
+    "parent": 111,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1435",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/111"
+        }
+      ]
+    }
+  },
+  {
+    "id": 112,
+    "name": "OnePlus Nord Series",
+    "slug": "oneplus-nord-series",
+    "parent": 111,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/112",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/111"
+        }
+      ]
+    }
+  },
+  {
+    "id": 118,
+    "name": "OnePlus Parts",
+    "slug": "oneplus-parts",
+    "parent": 80,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/118",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/80"
+        }
+      ]
+    }
+  },
+  {
+    "id": 106,
+    "name": "Oppo",
+    "slug": "oppo",
+    "parent": 1375,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 3,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/106",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1375"
+        }
+      ]
+    }
+  },
+  {
+    "id": 107,
+    "name": "Oppo A Series",
+    "slug": "oppo-a-series",
+    "parent": 106,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 1,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/107",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/106"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1399,
+    "name": "Oppo Cases",
+    "slug": "oppo-cases",
+    "parent": 149,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1399",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/149"
+        }
+      ]
+    }
+  },
+  {
+    "id": 108,
+    "name": "Oppo F Series",
+    "slug": "oppo-f-series",
+    "parent": 106,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/108",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/106"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1437,
+    "name": "Oppo Find N Series",
+    "slug": "oppo-find-n-series",
+    "parent": 106,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1437",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/106"
+        }
+      ]
+    }
+  },
+  {
+    "id": 110,
+    "name": "Oppo Find X Series",
+    "slug": "oppo-find-x-series",
+    "parent": 106,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 1,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/110",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/106"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1440,
+    "name": "Oppo K Series",
+    "slug": "oppo-k-series",
+    "parent": 106,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1440",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/106"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1438,
+    "name": "Oppo N Series",
+    "slug": "oppo-n-series",
+    "parent": 106,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1438",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/106"
+        }
+      ]
+    }
+  },
+  {
+    "id": 117,
+    "name": "Oppo parts",
+    "slug": "oppo-parts",
+    "parent": 80,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/117",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/80"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1439,
+    "name": "Oppo R Series",
+    "slug": "oppo-r-series",
+    "parent": 106,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1439",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/106"
+        }
+      ]
+    }
+  },
+  {
+    "id": 109,
+    "name": "Oppo Reno Series",
+    "slug": "oppo-reno-series",
+    "parent": 106,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 1,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/109",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/106"
+        }
+      ]
+    }
+  },
+  {
+    "id": 80,
+    "name": "Phone Parts",
+    "slug": "phone-parts",
+    "parent": 0,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/80",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1460,
+    "name": "Poco C Series",
+    "slug": "poco-c-series",
+    "parent": 121,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1460",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/121"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1457,
+    "name": "Poco F Series",
+    "slug": "poco-f-series",
+    "parent": 121,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1457",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/121"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1459,
+    "name": "Poco M Series",
+    "slug": "poco-m-series",
+    "parent": 121,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1459",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/121"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1458,
+    "name": "Poco X Series",
+    "slug": "poco-x-series",
+    "parent": 121,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1458",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/121"
+        }
+      ]
+    }
+  },
+  {
+    "id": 997,
+    "name": "Portable Bluetooth Speakers",
+    "slug": "portable-bluetooth-speakers",
+    "parent": 996,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 2,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/997",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/996"
+        }
+      ]
+    }
+  },
+  {
+    "id": 128,
+    "name": "Power Bank",
+    "slug": "power-bank",
+    "parent": 62,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 2,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/128",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/62"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1419,
+    "name": "Power Banks For Laptops",
+    "slug": "power-banks-for-laptops",
+    "parent": 128,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 2,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1419",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/128"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1418,
+    "name": "Power Banks For Smartphones",
+    "slug": "power-banks-for-smartphones",
+    "parent": 128,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 2,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1418",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/128"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1423,
+    "name": "Privacy Protectors",
+    "slug": "privacy-protectors",
+    "parent": 124,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1423",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/124"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1383,
+    "name": "PS3 Controllers",
+    "slug": "ps3-controllers",
+    "parent": 1381,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1383",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1381"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1382,
+    "name": "PS4 Controllers",
+    "slug": "ps4-controllers",
+    "parent": 1381,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1382",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1381"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1384,
+    "name": "PS5 Controllers",
+    "slug": "ps5-controllers",
+    "parent": 1381,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1384",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1381"
+        }
+      ]
+    }
+  },
+  {
+    "id": 120,
+    "name": "Realme",
+    "slug": "realme",
+    "parent": 1375,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/120",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1375"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1443,
+    "name": "Realme C Series",
+    "slug": "realme-c-series",
+    "parent": 120,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1443",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/120"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1441,
+    "name": "Realme GT Series",
+    "slug": "realme-gt-series",
+    "parent": 120,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1441",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/120"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1445,
+    "name": "Realme Narvo Series",
+    "slug": "realme-narvo-series",
+    "parent": 120,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1445",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/120"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1444,
+    "name": "Realme Note Series",
+    "slug": "realme-note-series",
+    "parent": 120,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1444",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/120"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1442,
+    "name": "Realme P Series",
+    "slug": "realme-p-series",
+    "parent": 120,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1442",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/120"
+        }
+      ]
+    }
+  },
+  {
+    "id": 143,
+    "name": "Realme Parts",
+    "slug": "realme-parts",
+    "parent": 80,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/143",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/80"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1446,
+    "name": "Realme V Series",
+    "slug": "realme-v-series",
+    "parent": 120,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1446",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/120"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1455,
+    "name": "Redmi A Series",
+    "slug": "redmi-a-series",
+    "parent": 121,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1455",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/121"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1456,
+    "name": "Redmi K Series",
+    "slug": "redmi-k-series",
+    "parent": 121,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1456",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/121"
+        }
+      ]
+    }
+  },
+  {
+    "id": 278,
+    "name": "Refurbished iPhones",
+    "slug": "refurbished-iphones",
+    "parent": 1375,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 21,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/278",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1375"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1447,
+    "name": "Refurbished Samsung Phones",
+    "slug": "refurbished-samsung-phones",
+    "parent": 1375,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1447",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1375"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1406,
+    "name": "Ring Cases",
+    "slug": "ring-cases",
+    "parent": 149,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1406",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/149"
+        }
+      ]
+    }
+  },
+  {
+    "id": 46,
+    "name": "Samsung",
+    "slug": "samsung",
+    "parent": 1375,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 45,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/46",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1375"
+        }
+      ]
+    }
+  },
+  {
+    "id": 49,
+    "name": "Samsung A Series",
+    "slug": "samsung-a-series",
+    "parent": 46,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 13,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/49",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/46"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1462,
+    "name": "Samsung Accessories",
+    "slug": "samsung-accessories",
+    "parent": 62,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1462",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/62"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1396,
+    "name": "Samsung Cases",
+    "slug": "samsung-cases",
+    "parent": 149,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1396",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/149"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1476,
+    "name": "Samsung Flip Series",
+    "slug": "samsung-flip-series",
+    "parent": 46,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 1,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1476",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/46"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1475,
+    "name": "Samsung Fold Series",
+    "slug": "samsung-fold-series",
+    "parent": 46,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1475",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/46"
+        }
+      ]
+    }
+  },
+  {
+    "id": 93,
+    "name": "Samsung Galaxy Series",
+    "slug": "samsung-galaxy-series",
+    "parent": 46,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/93",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/46"
+        }
+      ]
+    }
+  },
+  {
+    "id": 131,
+    "name": "Samsung Galaxy Tabs",
+    "slug": "samsung-galaxy-tabs",
+    "parent": 53,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 3,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/131",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/53"
+        }
+      ]
+    }
+  },
+  {
+    "id": 94,
+    "name": "Samsung J Series",
+    "slug": "samsung-j-series",
+    "parent": 46,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/94",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/46"
+        }
+      ]
+    }
+  },
+  {
+    "id": 47,
+    "name": "Samsung Note Series",
+    "slug": "samsung-note-series",
+    "parent": 46,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 1,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/47",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/46"
+        }
+      ]
+    }
+  },
+  {
+    "id": 115,
+    "name": "Samsung Parts",
+    "slug": "samsung-parts",
+    "parent": 80,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/115",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/80"
+        }
+      ]
+    }
+  },
+  {
+    "id": 92,
+    "name": "Samsung Prime Series",
+    "slug": "samsung-prime-series",
+    "parent": 46,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/92",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/46"
+        }
+      ]
+    }
+  },
+  {
+    "id": 48,
+    "name": "Samsung S Series",
+    "slug": "samsung-s-series",
+    "parent": 46,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 27,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/48",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/46"
+        }
+      ]
+    }
+  },
+  {
+    "id": 146,
+    "name": "Samsung Tablet Parts",
+    "slug": "samsung-tablet-parts",
+    "parent": 144,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/146",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/144"
+        }
+      ]
+    }
+  },
+  {
+    "id": 124,
+    "name": "Screen Protector",
+    "slug": "screen-protector",
+    "parent": 62,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/124",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/62"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1409,
+    "name": "Shockproof Cases",
+    "slug": "shockproof-cases",
+    "parent": 149,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1409",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/149"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1410,
+    "name": "Silicone Cases",
+    "slug": "silicone-cases",
+    "parent": 149,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1410",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/149"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1426,
+    "name": "Smart Speakers",
+    "slug": "smart-speakers",
+    "parent": 996,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1426",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/996"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1417,
+    "name": "Solar Power Banks",
+    "slug": "solar-power-banks",
+    "parent": 128,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1417",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/128"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1467,
+    "name": "Sony",
+    "slug": "sony",
+    "parent": 1375,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 1,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1467",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1375"
+        }
+      ]
+    }
+  },
+  {
+    "id": 147,
+    "name": "Sony Tablet Parts",
+    "slug": "sony-tablet-parts",
+    "parent": 144,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/147",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/144"
+        }
+      ]
+    }
+  },
+  {
+    "id": 996,
+    "name": "Speakers",
+    "slug": "speakers",
+    "parent": 62,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 2,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/996",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/62"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1338,
+    "name": "Student Laptops",
+    "slug": "student-laptops",
+    "parent": 55,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1338",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/55"
+        }
+      ]
+    }
+  },
+  {
+    "id": 144,
+    "name": "Tablet Parts",
+    "slug": "tablet-parts",
+    "parent": 80,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/144",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/80"
+        }
+      ]
+    }
+  },
+  {
+    "id": 53,
+    "name": "Tablets & iPads",
+    "slug": "tablets-and-ipads",
+    "parent": 0,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 9,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/53",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1407,
+    "name": "Thin Cases",
+    "slug": "thin-cases",
+    "parent": 149,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1407",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/149"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1402,
+    "name": "Transparent Cases",
+    "slug": "transparent-cases",
+    "parent": 149,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 1,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1402",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/149"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1013,
+    "name": "Travel Adapter",
+    "slug": "travel-adapter",
+    "parent": 1374,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 2,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1013",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1374"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1416,
+    "name": "Ultra High Power Banks",
+    "slug": "ultra-high-power-banks",
+    "parent": 128,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1416",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/128"
+        }
+      ]
+    }
+  },
+  {
+    "id": 15,
+    "name": "Uncategorized",
+    "slug": "uncategorized",
+    "parent": 0,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 1,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/15",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ]
+    }
+  },
+  {
+    "id": 411,
+    "name": "Used iPhones",
+    "slug": "used-iphones",
+    "parent": 1375,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 57,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/411",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1375"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1448,
+    "name": "Used Samsung Phones",
+    "slug": "used-samsung-phones",
+    "parent": 1375,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 34,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1448",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1375"
+        }
+      ]
+    }
+  },
+  {
+    "id": 122,
+    "name": "Vivo",
+    "slug": "vivo",
+    "parent": 1375,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/122",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1375"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1452,
+    "name": "Vivo T Series",
+    "slug": "vivo-t-series",
+    "parent": 122,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1452",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/122"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1451,
+    "name": "Vivo V Series",
+    "slug": "vivo-v-series",
+    "parent": 122,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1451",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/122"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1450,
+    "name": "Vivo X Fold Series",
+    "slug": "vivo-x-fold-series",
+    "parent": 122,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1450",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/122"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1449,
+    "name": "Vivo X Series",
+    "slug": "vivo-x-series",
+    "parent": 122,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1449",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/122"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1453,
+    "name": "Vivo Y Series",
+    "slug": "vivo-y-series",
+    "parent": 122,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1453",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/122"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1471,
+    "name": "Wall Chargers",
+    "slug": "wall-chargers",
+    "parent": 1374,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 2,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1471",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1374"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1408,
+    "name": "Waterproof Cases",
+    "slug": "waterproof-cases",
+    "parent": 149,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1408",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/149"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1427,
+    "name": "Waterproof Speakers",
+    "slug": "waterproof-speakers",
+    "parent": 996,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1427",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/996"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1394,
+    "name": "Webcams",
+    "slug": "webcams",
+    "parent": 1339,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1394",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1339"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1474,
+    "name": "Wired Earphones",
+    "slug": "wired-earphones",
+    "parent": 59,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 1,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1474",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/59"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1388,
+    "name": "Wired Gaming Headphones",
+    "slug": "wired-gaming-headphones",
+    "parent": 1378,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1388",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1378"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1390,
+    "name": "Wired Gaming Keyboards",
+    "slug": "wired-gaming-keyboards",
+    "parent": 1379,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1390",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1379"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1385,
+    "name": "Wired Gaming Mice",
+    "slug": "wired-gaming-mice",
+    "parent": 1380,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1385",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1380"
+        }
+      ]
+    }
+  },
+  {
+    "id": 137,
+    "name": "Wireless Charger",
+    "slug": "wireless-chargers",
+    "parent": 1374,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 6,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/137",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1374"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1387,
+    "name": "Wireless Gaming Headphones",
+    "slug": "wireless-gaming-headphones",
+    "parent": 1378,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1387",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1378"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1389,
+    "name": "Wireless Gaming Keyboards",
+    "slug": "wireless-gaming-keyboards",
+    "parent": 1379,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1389",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1379"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1386,
+    "name": "Wireless Gaming Mice",
+    "slug": "wireless-gaming-mice",
+    "parent": 1380,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1386",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1380"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1414,
+    "name": "Wireless Power Banks",
+    "slug": "wireless-power-banks",
+    "parent": 128,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1414",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/128"
+        }
+      ]
+    }
+  },
+  {
+    "id": 121,
+    "name": "Xiaomi",
+    "slug": "xiaomi",
+    "parent": 1375,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 1,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/121",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1375"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1400,
+    "name": "Xiaomi Cases",
+    "slug": "xiaomi-cases",
+    "parent": 149,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1400",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/149"
+        }
+      ]
+    }
+  },
+  {
+    "id": 1454,
+    "name": "Xiaomi Mi Series",
+    "slug": "xiaomi-mi-series",
+    "parent": 121,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/1454",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://irepair-mobiles.co.uk/wp-json/wc/v3/products/categories/121"
+        }
+      ]
+    }
+  }
+]

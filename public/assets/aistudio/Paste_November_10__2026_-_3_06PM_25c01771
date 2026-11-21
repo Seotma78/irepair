@@ -1,0 +1,184 @@
+You are a senior full-stack engineer. I have a React website for "iRepair Mobiles" that replaces my WordPress + WooCommerce website. Pages, products and blog posts use EXACTLY THE SAME URL PATHS on the new site; only the domain differs between environments. WordPress uses the RANK MATH SEO plugin. I want every public page type on the React site (pages, products, product categories, brands, blog posts, blog categories/tags/authors) to output SEO exactly as Rank Math does today, so rankings are preserved, plus a SYNC button in the admin dashboard that pulls the latest SEO from WordPress whenever I need it. Keep all existing design, routes and functionality. Do not redesign anything else.
+
+I already have: an admin dashboard, a local database, a category module (parent/child hierarchy), a WooCommerce product sync engine (scheduler, job locking, sync dashboard) storing products, variations, categories and brands with their WordPress slug, and a blog module (or one in progress). This work ATTACHES SEO to those records and reuses the existing sync engine and scheduler.
+
+I cannot attach files here, so everything you need is in this prompt, and you must build a dashboard "Import baseline CSV" feature so I can upload my own data file later (format in section 3).
+
+First, inspect the project: routing, rendering mode (SSR, static generation or client-only), how <head> tags are set, existing SEO components or Yoast/SEO fields in the product, category and blog modules, sitemap and robots.txt handling, the sync engine, scheduler, job locking, settings storage and the header/top bar. Tell me briefly your plan and the files you will change, then proceed.
+
+=====================================
+1. DOMAIN PLAN AND THE "SAME PATHS, DIFFERENT DOMAIN" RULE
+=====================================
+- DEVELOPMENT (now): WordPress/WooCommerce is live on https://irepair-mobiles.co.uk. The React site is built on a dev/staging URL. SEO is read from the live main domain.
+- LAUNCH: React goes live on https://irepair-mobiles.co.uk. WordPress/WooCommerce moves to https://old.irepair-mobiles.co.uk as a hidden backend. Afterwards SEO and catalogue data are read from the old subdomain.
+- Because paths are identical on both sides, store and match EVERYTHING by (entity_type, URL PATH with trailing slash exactly as on WordPress), never by full URL or hostname. Redirect destinations are stored as paths too. Changing a domain setting must never change stored data.
+Editable settings (dashboard "SEO settings", saved in the database, env-var defaults, effective immediately, no redeploy):
+1. WORDPRESS SOURCE URL: base URL SEO is fetched from. Default now https://irepair-mobiles.co.uk; after launch https://old.irepair-mobiles.co.uk. Validate (https, no path). "Test source URL" button: fetch the homepage, one product and one category; report status, whether Rank Math output was found (rank-math-schema script, title, canonical), whether Cloudflare/security blocks the request, and the redirect chain.
+2. PUBLIC SITE URL (SITE_URL): https://irepair-mobiles.co.uk (no www), used for canonicals, og:url, schema URLs and sitemaps.
+3. ORIGINS TO REWRITE (editable list): the source URL, https://irepair-mobiles.co.uk, https://www.irepair-mobiles.co.uk, http:// versions and https://old.irepair-mobiles.co.uk. Every one is replaced by SITE_URL in output, so rendering is right before and after the move.
+4. Environment mode: Development/Staging versus Production (production = hostname equals SITE_URL's host, or explicit). In non-production output noindex, nofollow on every page; canonicals still use SITE_URL.
+5. Optional HTTP Basic Auth or custom header for fetching WordPress (encrypted, backend only).
+6. Source URL change history in the activity log, a confirmation dialog on change, and "Compare before applying" (capture into a preview, show the diff before replacing stored data).
+7. The WooCommerce/WordPress API base URL used by the product sync is also a setting I change at launch. All code uses PATHS from WordPress permalinks, never the hostname inside them.
+
+=====================================
+2. CORE PRINCIPLE: CAPTURE RANK MATH, DO NOT REBUILD IT
+=====================================
+- Rank Math writes the full SEO <head> of each WordPress page (title, description, robots, canonical, Open Graph, Twitter, JSON-LD schema). CAPTURE what it outputs on each public WordPress URL, store it, and RENDER it on the matching React page, changing only the domain (plus the Product price overlay in section 7).
+- /wp-json/rankmath/v1/getHead does NOT exist on my site (404). Do not use it. Capture by fetching the public page HTML (confirmed: the live pages contain <script type="application/ld+json" class="rank-math-schema">).
+- SEO is edited in WordPress (Rank Math). The React dashboard is READ-ONLY for SEO. Remove or hide any existing SEO/Yoast editing fields or panels in the product, category, brand and blog modules and anything SEO-related shown to visitors. Keep stored data. Detail views show only a small SEO status chip, "Re-sync SEO for this item" and "Edit in WordPress". The central "SEO" screen is the one place SEO is viewed.
+- A successful live capture wins over the baseline CSV for title, description, OG, Twitter and schema. ROBOTS follow the baseline rule in section 6.
+
+=====================================
+3. MY EXISTING DATA (BUILT IN) AND THE BASELINE CSV IMPORT
+=====================================
+Facts from my old site's crawl (use as the starting list and for verification):
+- 283 tracked URLs: 25 pages, 168 products, 90 posts. 276 indexable (status 200, robots "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"), 7 redirecting (301, non-indexable).
+- Structure: pages are /{slug}/ at the ROOT; blog posts are /{slug}/ at the ROOT (NO /blog/ prefix); products are /product/{slug}/. Every indexable URL ends with a trailing slash and every canonical equals its own URL (https, no www, no query strings).
+- Pages and posts share the same root URL space. The router resolves a root slug against redirects first, then pages, then posts, then 404. If a slug exists as both a page and a post, report a conflict in the dashboard and keep the page.
+- The shop page (/shop/) and all category, tag, author and brand archives are NOT in my crawl: discover them from the source sitemap.
+
+THE 7 CONFIRMED REDIRECTS (create these in the redirects module as 301s on first setup; they are paths; never render these URLs as pages even if a record with that slug exists; exclude from sitemaps):
+- /mobile-phones-repair/  ->  /mobile-phone-repair-shops-in-uk/
+- /mobile-phone-shop-in-uk/  ->  /shop/   (verify the exact shop path/trailing slash from the source)
+- /product/buy-used-samsung-galaxy-s9-plus/  ->  /product/samsung-galaxy-s9-plus-unlocked-used/
+- /product/iphone-14-new-a-grade/  ->  /product/iphone-14-used-unlocked/
+- /product/used-iphone-14-pro-max/  ->  /product/iphone-14-pro-max-used-unlocked/
+- /product/used-iphone-14-pro/  ->  /product/iphone-14-pro-used-unlocked/
+- /mobile-phone-repair-shops-in-uk  (no trailing slash)  ->  /mobile-phone-repair-shops-in-uk/  (likely a plain trailing-slash redirect; confirm from the captured redirect chain and report what it really does)
+Also verify each redirect from the live source with the capture engine and flag any mismatch. Report if any of the 4 redirecting products exist as published products in my local catalogue (conflict: the redirect wins).
+
+DASHBOARD "IMPORT BASELINE CSV": a screen where I upload a CSV (UTF-8, with BOM tolerated) and the app validates and imports it as the tracked-URL list and baseline snapshot, with a preview (rows, new, updated, errors) before applying. Columns:
+entity_type (page | product | post), path, status_code, indexability (Indexable | Non-Indexable), meta_title, meta_description, meta_keywords, h1_1, h1_2, h2_1, h2_2, canonical_path, meta_robots, x_robots_tag, redirect_to_path.
+Rows with a redirect_to_path create a 301 in the redirects module. Re-importing updates the baseline. Support also exporting the current baseline to this same format. I will upload my file seo_baseline_all_283_urls.csv with this screen once built.
+
+Known quirks on the old site to COPY AS THEY ARE and list in a "not changed, recommended later" report:
+- Second H1 (an "FAQs" heading rendered as H1): /product/budi-15w-wireless-charging-stand/ and /product/iphone-13-mini-refurbished-unlocked/; posts /best-iphone-repair-service-in-the-uk/ and /the-truth-about-fast-charging/.
+- No H1: /laptop-repair-shops-in-uk/.
+- Over-long titles (above 60 characters): 2 products, 4 posts; roughly 20 descriptions above 160 characters. Copy exactly, do not truncate.
+- Homepage Local SEO data issues in schema (opening hours "Mo,Tu,We,Th,Fr,Sa 08:00-08:00" and "Su 10:00-05:30", addressCountry "United Kingdom" instead of "GB", no telephone/addressLocality): report only; I will fix them in Rank Math before the capture.
+
+=====================================
+4. WHICH PAGES ARE TRACKED (entity types)
+=====================================
+Track by (entity_type, path): page, product, product_category, brand/tag (if public and indexable), post, blog category, blog tag, author. Not captured and always noindex, nofollow on React: cart, checkout, my-account/account pages, order-received, search results, admin.
+DISCOVERY: "Discover pages" reads the source's /sitemap_index.xml and every sub-sitemap (use the real names found there, e.g. page-sitemap.xml, post-sitemap.xml, product-sitemap.xml, product_cat-sitemap.xml, category-sitemap.xml), lists untracked URLs with lastmod, and lets me add them with one click or automatically (setting). Also generate tracked entries from local product, category and blog records. Sitemap URLs with no local record show as "WordPress-only". Paginated archives (/page/2/): capture up to page N (default 3). Product variation query strings (?attribute_...) are never separate entries and never in canonicals.
+
+=====================================
+5. WHAT TO CAPTURE PER URL AND HOW THE SYNC ENGINE WORKS
+=====================================
+Capture (whitelist) from the WordPress <head>: <title>; meta description, robots, keywords; link rel canonical/prev/next/alternate hreflang; all meta property og:*, article:*, product:*; all meta name twitter:*; all <script type="application/ld+json"> blocks (especially class rank-math-schema; keep parsed JSON and original text). Discard styles, scripts, preloads, emoji/oEmbed/REST/RSS links, shortlink, generator, favicon, theme and plugin tags. Also record: entity_type, path, requested URL, final URL, HTTP status, redirect chain with codes, X-Robots-Tag header, <h1> count and text, first <h2> texts, content hash, captured_at, source URL used, sitemap lastmod, and the previous capture for history. Link each capture to the local record (product_id, category_id, post_id, page) by path.
+Method: server-side GET (backend only) to {WORDPRESS SOURCE URL}{path}, browser-like User-Agent, "Accept: text/html", no cookies (public logged-out page). Follow redirects but record every hop. Timeouts, retries with backoff, polite concurrency (about 3 at a time, short delay, overall cap). Detect blocked or fake responses (Cloudflare/security challenge, captcha, maintenance, login page, empty body): never store them; mark "Blocked" with a note to whitelist my server IP; keep previous good data. Parse with a real HTML parser, never regex. Write only real changes (hash compare) and log exactly which fields changed. Flag when the final URL's host differs from the source host.
+Smart scheduling for 283+ URLs and growth:
+- INCREMENTAL: read the source sub-sitemaps, compare lastmod with stored values, re-capture only new or changed URLs, and detect URLs that disappeared.
+- ROLLING FULL REFRESH (Rank Math global changes do not alter page dates): re-capture everything at least weekly (about 15% per day, configurable), pages first, then categories, then products and posts.
+- Resumable and idempotent: interrupted jobs resume from the last completed URL; a second run changes nothing.
+Triggers (all required):
+1. A prominent "Sync SEO from WordPress" button on the "SEO" screen with "Sync everything", "Sync pages", "Sync products", "Sync categories", "Sync blog", "Sync selected", and "Sync this URL" per row. Show the current source URL beside it, a live progress bar (X of Y per entity type), a running log and a summary (unchanged, updated, new, redirecting, blocked, failed, missing).
+2. "Re-sync SEO for this item" on every product, category, brand and post detail page.
+3. Integration with the catalogue sync: fill the existing placeholder SEO phase of the product/category/blog sync job so new or changed items get their SEO captured in the same job (a new product has SEO from its first appearance).
+4. Scheduled sync (off / 6 hours / daily / weekly; default daily) via the existing scheduler, with last/next run.
+5. Optional webhook (/api/webhooks/seo-sync, secret-verified) plus a small WordPress snippet or mini-plugin pinging it on post/product/term save and Rank Math settings save. Off by default.
+6. "Create baseline snapshot" and an "Initial capture (before launch)" mode.
+Safety: single-run lock; a failed or blocked URL keeps its previous good data (a failed sync never blanks a live page's SEO); "Preview changes" diff with approve/revert (setting: review first for manual full syncs, auto-apply for scheduled and per-item syncs); admin-only permissions; rate limiting; never log credentials; activity log of who triggered what.
+
+=====================================
+6. ROBOTS / NOINDEX PROTECTION (CRITICAL FOR LAUNCH)
+=====================================
+When WordPress moves to old.irepair-mobiles.co.uk it will be hidden from Google (noindex via X-Robots-Tag, Rank Math or "Discourage search engines"). A blind sync would copy that and make EVERY page of the new site noindex.
+- BASELINE SNAPSHOT: from the imported CSV and the first successful full capture, store robots, indexability and canonical path for every tracked URL. Show the baseline date; warn if no baseline exists.
+- ROBOTS SOURCE setting: "Use baseline robots and indexability (recommended after the old site is hidden)" or "Use live captured robots". Default: baseline once it exists. In baseline mode title, description, OG, Twitter and schema still come from the live capture, but meta robots and X-Robots-Tag come from the baseline. New URLs after the baseline get robots from their first capture taken before the source was hidden; if the source is already hidden, flag them "needs review".
+- MASS-NOINDEX DETECTOR (per entity type): if all or more than 20% of tracked URLs flip from indexable to noindex versus the baseline, STOP applying robots changes, show a red banner "The WordPress source appears to be hidden from search; robots values were NOT copied", and keep the baseline.
+- In production never output noindex on a URL the baseline marks indexable unless I set a locked manual override. In non-production always noindex, nofollow.
+
+=====================================
+7. RENDERING ON THE REACT SITE
+=====================================
+- One reusable SEO component/metadata function for EVERY page type reads the stored entry for the current entity type and path and writes: title, meta description, robots (section 6), canonical, keywords (if captured), Open Graph (including product:*), Twitter, hreflang/prev/next if captured, and the JSON-LD blocks. Exactly one title, description, canonical and robots tag per page.
+- Tags MUST be in the INITIAL server-rendered or pre-rendered HTML (visible in view-source), not added by client JavaScript. If the site is currently client-only, say so and set up SSR or pre-rendering for all page types.
+- Send the captured X-Robots-Tag as an HTTP header too. Normalise paths ("/about-us" and "/about-us/" resolve to one entry, 301 the other to the trailing-slash form). Product canonicals never contain variation query parameters.
+- Remove older hardcoded, default or Yoast-derived title, description, canonical or schema so nothing is duplicated.
+- Fallbacks when no capture exists: private pages noindex, nofollow; other pages use Rank Math's default "%title% - iRepair Mobiles" with a description from content, log a warning, show "Missing SEO"; products get a minimal valid Product JSON-LD from local data. Never output an empty title or crash.
+- Visible breadcrumbs match the captured BreadcrumbList. Draft, private and trashed items are not rendered and have no SEO output. Redirecting URLs never render.
+PRODUCT SCHEMA LIVE OVERLAY (the only exception to "copy schema exactly"): after the origin rewrite, update ONLY these fields of a product's Product node from local data: offers.price (or lowPrice/highPrice/offerCount for variable products from the live variation price range), priceCurrency, availability (InStock/OutOfStock/PreOrder/BackOrder from stock status), priceValidUntil (sale end date if a sale is active, else keep captured), sku, and review/rating counts only if stored locally. Everything else stays as captured. Setting "Live overlay for Product schema" (default on). If the captured structure is unexpected, skip the overlay for that page and log it. Show in the dashboard when the overlay changed a value.
+
+=====================================
+8. URL REWRITING AND SCHEMA RULES
+=====================================
+- Before rendering, replace EVERY origin in the "Origins to rewrite" list with SITE_URL in: canonical, og:url, og:image, twitter URLs and images, and every url, @id, item, mainEntityOfPage, logo, image, contentUrl, target and breadcrumb link inside JSON-LD. After rewriting no WordPress-side hostname (including old.irepair-mobiles.co.uk) may remain anywhere in rendered HTML or JSON-LD. Identical behaviour whether the source is the main domain (now) or the old subdomain (after launch).
+- Copy the JSON-LD @graph exactly as captured except for the origin rewrite and the product overlay: do not normalise trailing slashes inside the schema (on my homepage the Organization and WebSite "url" have NO trailing slash while WebPage "@id" and "url" do), do not decode "&amp;" in JSON strings, do not remove, merge, reorder or "improve" nodes. Keep JSON valid. Keep dateModified/datePublished as captured and show "date captured".
+- Also rewrite old-subdomain links inside synced CONTENT HTML (descriptions, short descriptions, technical details, blog posts) to SITE_URL so internal links point to live React pages. Do not rewrite /wp-admin/ or /wp-json/ links, and leave real external links alone.
+- MEDIA URLs: schema, OG, Twitter and content reference /wp-content/uploads/... After the move those files live on the old subdomain. Setting "Media URL mode": (a) proxy: React serves /wp-content/uploads/* by proxying to {WORDPRESS SOURCE URL}/wp-content/uploads/* (keeps old image URLs and Google Images links working), or (b) copy images into my own storage and rewrite URLs everywhere. Default (a) for URLs in schema/OG. Verify with a script that every image URL in rendered schema, og:image and twitter:image returns HTTP 200 on the React domain.
+- SEARCH ROUTE: the WebSite node has a SearchAction targeting /?s={search_term_string}. Make the React site handle GET /?s=term (and /?s=term&post_type=product) with a 301 to my React search page with the same term.
+- Validation after every render and sync: every JSON-LD block parses; every "@id" reference resolves inside the same @graph; no stray hostnames; problems shown in the dashboard.
+
+=====================================
+9. REDIRECTS (replaces Rank Math Redirections)
+=====================================
+- Central redirects module: table of source path, destination path, type (301/302/307/410/451), match type (exact/starts-with/contains), hit count, origin ("baseline"/"captured"/"auto"/"imported"/"manual"). Real server-side HTTP redirects (not JavaScript), trailing-slash and case normalisation, no chains or loops. Screens: list, add/edit/delete, CSV import (including Rank Math's redirections export) and a 404 log (URL, count, last seen, referrer).
+- The 7 redirects from section 3 are seeded on first setup and checked against the live capture.
+- AUTOMATIC REDIRECTS FROM THE CATALOGUE SYNC: when a product, category, brand or post keeps its external_id but its slug or parent changes in WordPress, create a 301 from the old path to the new path and move the SEO entry. When a product or category is deleted or trashed, follow my policy setting (301 to parent category or best related page, 410, or leave 404) and list them in a "Needs redirect decision" queue instead of silently dropping them.
+- Redirecting URLs are never rendered and are excluded from sitemaps.
+
+=====================================
+10. SITEMAPS AND ROBOTS.TXT (mirror Rank Math)
+=====================================
+- Serve /sitemap_index.xml and mirror the EXACT sub-sitemap names and patterns found in the source's sitemap_index at capture time, so Search Console's existing submission keeps working. Generate from stored data: ONLY indexable URLs (per baseline/robots rule), rewritten canonical URLs, trailing slashes preserved, accurate lastmod, image entries for products if the source had them. Exclude noindex and redirecting URLs. Split files above 1,000 URLs, as Rank Math does.
+- robots.txt on React: allow the public site, keep "Sitemap: https://irepair-mobiles.co.uk/sitemap_index.xml", disallow /admin-login, /admin, /account, /cart, /checkout, do not block CSS or JS. Non-production: "Disallow: /" plus noindex.
+- Document the setup for the OLD subdomain: noindex via meta or X-Robots-Tag, and do NOT use "Disallow: /" there, so Google can read the noindex and drop old pages.
+
+=====================================
+11. "OLD WEBSITE" LINK IN THE TOP HEADER
+=====================================
+Add a small link in the TOP BAR (not the main menu or bottom navigation) so customers can open the old website while the new site settles.
+- Default text "Visit old website" (editable), optional external-link icon, small and unobtrusive.
+- Header settings: enable/disable, text, URL (default https://old.irepair-mobiles.co.uk), open in new tab (default on), desktop/mobile toggles. Disabling removes it everywhere instantly.
+- Real <a> with target="_blank", rel="noopener noreferrer nofollow", aria-label "Visit the old iRepair Mobiles website (opens in a new tab)", optional analytics click event.
+- AUTO-HIDE: if the link's host equals the React site's host (as in development), do not render it and show "Hidden: old website URL equals the current site" in the dashboard. It appears once the host differs.
+- On mobile it sits in the top bar's horizontally scrollable area without breaking the sticky header.
+- It is the ONLY intentional public link to the old site (not in footer, sitemap or schema). The admin login URL and sync pages never appear on the public site.
+
+=====================================
+12. DASHBOARD "SEO" SCREEN (READ-ONLY)
+=====================================
+- Tabs: Pages, Products, Categories, Brands, Blog, Redirects, Import/Export, Settings, History. Table columns: path, title, description, robots (and whether from baseline or live), indexable, schema types present, status chip (OK / Changed since last sync / Differs from baseline / Blocked / Missing / Redirecting / Overlay applied / WordPress-only / Conflict), last captured, schema validity chip. Search, filters, CSV export.
+- Detail view: stored head, Google result preview, social share preview, pretty-printed JSON-LD with validation, headings, redirect chain, product overlay differences, capture history, "Revert to previous capture".
+- Buttons: "Sync SEO from WordPress" (all and per type), "Sync this URL", "Discover pages", "Create baseline snapshot", "Import baseline CSV", "Test source URL", "Edit in WordPress" (link built from the CURRENT source URL to the right wp-admin screen), "Export CSV".
+- Top of screen: current source URL, environment mode, last sync result, baseline date, and red/amber banners for: no baseline, mass-noindex detected, blocked URLs, source unreachable, items missing SEO, "Needs redirect decision" count, slug conflicts between pages and posts.
+- "Local SEO data quality" report (read-only) flagging suspicious Organization/LocalBusiness values (opening hours where closing <= opening, addressCountry not a 2-letter ISO code, missing telephone or addressLocality) with an "Edit in WordPress (Rank Math > Titles & Meta > Local SEO)" hint. Never change values automatically.
+- No SEO editing in React, except an advanced setting, off by default, "Allow local override" with locked fields that syncs never overwrite, clearly flagged.
+- Duplicate-content guard: in production warn me if the WordPress source is still publicly indexable on its own hostname (check robots meta, X-Robots-Tag and robots.txt) and recommend noindex. Never change WordPress myself.
+
+=====================================
+13. HEADINGS PARITY
+=====================================
+Each page, product and post renders the same H1 as the old page (from the baseline h1_1 and the live capture); products use the WooCommerce product name. Keep the known quirks from section 3 exactly (double H1, missing H1), do not fix them now, and report them. Report every other mismatch (old vs new) and fix only clear H1 mismatches without changing the design.
+
+=====================================
+14. COUNT RECONCILIATION AND SEO PARITY CHECK (launch gate)
+=====================================
+- COUNT RECONCILIATION per entity type: compare (a) URLs in the baseline CSV, (b) URLs in the source sitemap, (c) records in the local database. Report: in the baseline but not in the local data (would 404), in local data but not in the baseline or sitemap (new), in the sitemap but not in local data. Every indexable baseline URL (276) must return HTTP 200 on the React site or have a confirmed redirect. ZERO 404s for these URLs is a launch requirement.
+- "SEO parity check" tool (script and dashboard page): for ALL tracked URLs (not a sample) plus all discovered category and archive URLs, fetch the React page's raw HTML as a crawler would (no JavaScript) and compare it with BOTH the baseline and the live WordPress source page: status, title, description, canonical, robots, H1 text and count, OG title/description/image, Twitter card, JSON-LD (same node types, names, breadcrumb items and values apart from the domain and the allowed Product overlay fields). Output pass/fail (screen and CSV) with columns: URL, entity type, expected status, React status, title match, description match, canonical match, robots match, H1 match, schema node types match, notes. Target: 100% pass on every indexable URL; any mismatch is listed with a reason.
+- Automated tests: every tracked path has an entry; titles, descriptions and canonicals equal live source values; robots equal the baseline in baseline mode; exactly one title, description, canonical and h1 per page; no WordPress-side hostname (including old.irepair-mobiles.co.uk) in rendered HTML, JSON-LD or content links, tested with the source set to BOTH the main domain and the old subdomain; JSON-LD valid with the same node types; OG and Twitter present; the 7 redirects return 301 to the right destination; trailing-slash and uppercase variants 301 to the canonical; page-vs-post slug conflict detection; private pages noindex; non-production noindex; the mass-noindex detector blocks a simulated all-noindex source; changing the source URL setting changes where the next sync fetches from without a redeploy; incremental sync only re-captures changed lastmod URLs while the rolling refresh still covers everything; sync handles blocked, timeout, 500, changed title, changed schema, unchanged pages and a 1,000+ URL sitemap; an interrupted sync resumes; running twice changes nothing; the lock prevents concurrent runs; a failed URL keeps previous data; a non-admin cannot trigger a sync; the product Product-overlay changes only the allowed fields and skips safely on unexpected structures; a slug change creates an automatic 301 and moves the SEO entry; a deleted product lands in "Needs redirect decision"; draft products have no SEO output; the old-website link hides on equal hosts, appears on different hosts, has rel="noopener noreferrer nofollow" and disappears when disabled; the baseline CSV import validates, previews and applies correctly (including redirect rows).
+- Manually verify in view-source: /, /about-us/, /laptop-repair-shops-in-uk/, one simple product, one variable product, /product/budi-15w-wireless-charging-stand/, one post, /the-truth-about-fast-charging/, one category and /shop/.
+
+=====================================
+FIRST ACTION (before building everything)
+=====================================
+With the source URL set to https://irepair-mobiles.co.uk, capture and show me for these URLs: the homepage, /about-us/, /shop/, one simple product (/product/iphone-17-unlocked/), one variable product, /product/budi-15w-wireless-charging-stand/, one post (/the-truth-about-fast-charging/), /laptop-repair-shops-in-uk/, one redirecting product (/product/used-iphone-14-pro/) and one product category from the sitemap: HTTP status, redirect chain, parsed title, description, canonical, robots, og/twitter tags, JSON-LD @graph node types (and the Product node's offers for products), and the H1. Also list the sub-sitemap names found in the source's sitemap_index.xml. Wait for my confirmation before capturing everything.
+
+=====================================
+DELIVERABLES
+=====================================
+1. Summary of what changed per file and how the head is rendered (SSR or pre-render), and which existing SEO/Yoast fields or panels were removed or hidden.
+2. The capture/sync engine, schema and migrations, the SEO settings and SEO screens with the Sync button, the baseline CSV import, the baseline snapshot, the catalogue-sync integration and the first captured data.
+3. The reusable SEO component with URL rewriting and the Product overlay, sitemaps, robots.txt and the redirects module with automatic slug-change redirects, seeded with the 7 redirects.
+4. The top bar old-website link with its settings.
+5. The H1/H2 report, the length warnings list and the Local SEO quality report.
+6. The count reconciliation, the parity check tool and tests.
+7. A LAUNCH RUNBOOK: (a) run a full capture, import my baseline CSV, create the baseline snapshot and run the parity check while WordPress is still on the main domain, with product images stored locally; (b) full backups and a rehearsal on a staging copy; (c) set the React environment to production on the final domain; (d) move WordPress to old.irepair-mobiles.co.uk (WordPress Address and Site Address, database URL search-replace from a backup) and make it noindex via X-Robots-Tag or Rank Math WITHOUT Disallow in robots.txt; (e) whitelist the React server's IP in Cloudflare/security plugins; (f) update everything pointing at WordPress: the React app's WooCommerce/WordPress API base URL and SEO source URL (with "Test source URL" and "Compare before applying"), the Stripe webhook endpoint in the Stripe dashboard, WooCommerce webhooks, JWT/CORS allowed origins, the plugin that rewrites links in WooCommerce emails to the React domain, Search Console properties, and Google Merchant/Analytics settings; (g) point DNS for the main domain to React; (h) set up the /wp-content/uploads/* proxy; (i) run the parity check, check view-source on key pages and the sitemaps, test a payment, and submit the sitemap in Search Console; (j) enable the old-website link and monitor Search Console, the 404 log and the "Needs redirect decision" queue daily for the first weeks.
+8. The optional WordPress webhook snippet and setup notes (Cloudflare/security whitelisting).
+9. A list of what I must provide or confirm: the shop page path, a default social share image if Rank Math has none, the media URL mode, the deleted-product policy, the paginated-archive depth, and any old URLs missing from the baseline.
+10. A list of assumptions and limitations.
+
+Build in this order and confirm each step works before the next: (1) audit, confirm the head is server-rendered, hide existing SEO/Yoast panels; (2) domain settings and "Test source URL"; (3) first action: capture and show the sample URLs; (4) sync engine with the Sync button, progress and sitemap discovery; (5) baseline CSV import screen, redirects module seeded with the 7 redirects, and the baseline snapshot; (6) capture all tracked URLs; (7) SEO component with URL rewriting and exact tag rendering for pages; (8) robots/noindex protection and the mass-noindex detector; (9) categories and brands (hierarchy paths, breadcrumbs); (10) products with the Product schema overlay and variation canonicals; (11) blog posts, blog categories, tags and authors, with root-level slug routing and conflict detection; (12) integration with the catalogue sync job and incremental plus rolling refresh; (13) schema rules, media mode and search route; (14) automatic slug-change redirects and the redirect decision queue; (15) sitemaps and robots.txt; (16) top bar old-website link with auto-hide; (17) dashboard screens (diff review, history, Local SEO report, banners); (18) scheduler and optional webhook; (19) H1 parity, count reconciliation, parity check, tests, duplicate-content warning and the launch runbook. Ask me only if something essential is missing; otherwise make sensible assumptions and list them.

@@ -1,0 +1,417 @@
+{
+  "sub_sitemaps": [
+    "https://irepair-mobiles.co.uk/post-sitemap.xml",
+    "https://irepair-mobiles.co.uk/page-sitemap.xml",
+    "https://irepair-mobiles.co.uk/product-sitemap.xml",
+    "https://irepair-mobiles.co.uk/category-sitemap.xml",
+    "https://irepair-mobiles.co.uk/product_cat-sitemap.xml",
+    "https://irepair-mobiles.co.uk/brands-sitemap.xml"
+  ],
+  "samples": [
+    {
+      "label": "1. Homepage",
+      "requested_path": "/",
+      "http_status": 200,
+      "final_url": "https://irepair-mobiles.co.uk/",
+      "redirect_chain": [],
+      "title": "iRepair Mobiles - Expert Mobile Repair Shop in the UK",
+      "description": "More than a repair service! From fixing devices to buying, we restore functionality & offer cash for your old phones. Trust us for reliable solutions!",
+      "canonical": "https://irepair-mobiles.co.uk/",
+      "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+      "og_sample": {
+        "og:title": "iRepair Mobiles - Expert Mobile Repair Shop in the UK",
+        "og:url": "https://irepair-mobiles.co.uk/",
+        "og:type": "website",
+        "og:image": ""
+      },
+      "twitter_card": "summary_large_image",
+      "jsonld_graph_types": [
+        "Place",
+        [
+          "MobilePhoneStore",
+          "Organization"
+        ],
+        "WebSite",
+        "ImageObject",
+        "WebPage",
+        "Person",
+        "Article",
+        "Article"
+      ],
+      "product_offers": null,
+      "h1": [
+        "Fast And Trusted Mobile Repair Services"
+      ]
+    },
+    {
+      "label": "2. About Us",
+      "requested_path": "/about-us/",
+      "http_status": 200,
+      "final_url": "https://irepair-mobiles.co.uk/about-us/",
+      "redirect_chain": [],
+      "title": "UK's Leading Tech Repairs Specialists - iRepair Mobiles",
+      "description": "Get professional mobile device repairs and assistance at iRepair, the top-rated service in the UK. Quality fixes and expert hardware and software support.",
+      "canonical": "https://irepair-mobiles.co.uk/about-us/",
+      "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+      "og_sample": {
+        "og:title": "UK's Leading Tech Repairs Specialists - iRepair Mobiles",
+        "og:url": "https://irepair-mobiles.co.uk/about-us/",
+        "og:type": "article",
+        "og:image": "https://irepair-mobiles.co.uk/wp-content/uploads/2024/01/3.jpg"
+      },
+      "twitter_card": "summary_large_image",
+      "jsonld_graph_types": [
+        "Place",
+        [
+          "MobilePhoneStore",
+          "Organization"
+        ],
+        "WebSite",
+        "ImageObject",
+        "BreadcrumbList",
+        "AboutPage",
+        "Article"
+      ],
+      "product_offers": null,
+      "h1": [
+        "About Us"
+      ]
+    },
+    {
+      "label": "3. Shop Page",
+      "requested_path": "/shop/",
+      "http_status": 200,
+      "final_url": "https://irepair-mobiles.co.uk/shop/",
+      "redirect_chain": [],
+      "title": "Mobile Phone Accessories - Shop Now From iRepair - Get 30%",
+      "description": "Discover a wide range of mobile phonesto enhance your device. From cases and chargers to headphones and screen protectors, find the perfect accessories.",
+      "canonical": "https://irepair-mobiles.co.uk/shop/",
+      "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+      "og_sample": {
+        "og:title": "Mobile Phone Accessories - Shop Now From iRepair - Get 30%",
+        "og:url": "https://irepair-mobiles.co.uk/shop/",
+        "og:type": "article",
+        "og:image": ""
+      },
+      "twitter_card": "summary_large_image",
+      "jsonld_graph_types": [
+        "Place",
+        "MobilePhoneStore",
+        "WebSite",
+        "BreadcrumbList",
+        "CollectionPage"
+      ],
+      "product_offers": null,
+      "h1": [
+        "Shop"
+      ]
+    },
+    {
+      "label": "4. Simple Product",
+      "requested_path": "/product/iphone-17-unlocked/",
+      "http_status": 200,
+      "final_url": "https://irepair-mobiles.co.uk/product/iphone-17-unlocked/",
+      "redirect_chain": [],
+      "title": "Buy iPhone 17 - Unlocked | Free UK Delivery | Get Yours Now!",
+      "description": "Get the Apple iPhone 17, Unlocked at iRepair Mobiles UK. Best iPhone 17 price, slim design & free UK delivery. Buy Now!",
+      "canonical": "https://irepair-mobiles.co.uk/product/iphone-17-unlocked/",
+      "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+      "og_sample": {
+        "og:title": "Buy iPhone 17 - Unlocked | Free UK Delivery | Get Yours Now!",
+        "og:url": "https://irepair-mobiles.co.uk/product/iphone-17-unlocked/",
+        "og:type": "product",
+        "og:image": "https://irepair-mobiles.co.uk/wp-content/uploads/2025/09/iPhone-17-128GB-New-A-Grade-Unlocked-Sage.jpg"
+      },
+      "twitter_card": "summary_large_image",
+      "jsonld_graph_types": [
+        "Place",
+        [
+          "MobilePhoneStore",
+          "Organization"
+        ],
+        "WebSite",
+        "ImageObject",
+        "BreadcrumbList",
+        "ItemPage",
+        "Product"
+      ],
+      "product_offers": {
+        "@type": "Offer",
+        "price": "649.00",
+        "priceValidUntil": "2027-12-31",
+        "priceCurrency": "GBP",
+        "availability": "http://schema.org/OutOfStock",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://irepair-mobiles.co.uk/",
+          "name": "iRepair Mobiles",
+          "url": "https://irepair-mobiles.co.uk",
+          "logo": "https://irepair-mobiles.co.uk/wp-content/uploads/2023/04/Logo-1__1_-removebg-preview.png"
+        },
+        "url": "https://irepair-mobiles.co.uk/product/iphone-17-unlocked/"
+      },
+      "h1": [
+        "iPhone 17 – Unlocked"
+      ]
+    },
+    {
+      "label": "5. Variable Product",
+      "requested_path": "/product/iphone-14-used-unlocked/",
+      "http_status": 200,
+      "final_url": "https://irepair-mobiles.co.uk/product/iphone-14-used-unlocked/",
+      "redirect_chain": [],
+      "title": "iPhone 14 Used - Unlocked | Get Upto 30% Off | Free Delivery",
+      "description": "Unleash the power of the iPhone 14 Used. Experience superior performance, stunning camera, gorgeous display, and more.",
+      "canonical": "https://irepair-mobiles.co.uk/product/iphone-14-used-unlocked/",
+      "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+      "og_sample": {
+        "og:title": "iPhone 14 Used - Unlocked | Get Upto 30% Off | Free Delivery",
+        "og:url": "https://irepair-mobiles.co.uk/product/iphone-14-used-unlocked/",
+        "og:type": "product",
+        "og:image": "https://irepair-mobiles.co.uk/wp-content/uploads/2023/07/Apple-iPhone-14-Refurbished-30-Off-Starlight.jpg"
+      },
+      "twitter_card": "summary_large_image",
+      "jsonld_graph_types": [
+        "Place",
+        [
+          "MobilePhoneStore",
+          "Organization"
+        ],
+        "WebSite",
+        "ImageObject",
+        "BreadcrumbList",
+        "ItemPage",
+        "Product"
+      ],
+      "product_offers": {
+        "@type": "Offer",
+        "price": "329.00",
+        "priceValidUntil": "2027-12-31",
+        "priceCurrency": "GBP",
+        "availability": "http://schema.org/InStock",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://irepair-mobiles.co.uk/",
+          "name": "iRepair Mobiles",
+          "url": "https://irepair-mobiles.co.uk",
+          "logo": "https://irepair-mobiles.co.uk/wp-content/uploads/2023/04/Logo-1__1_-removebg-preview.png"
+        },
+        "url": "https://irepair-mobiles.co.uk/product/iphone-14-used-unlocked/"
+      },
+      "h1": [
+        "Apple iPhone 14 – Unlocked – Used"
+      ]
+    },
+    {
+      "label": "6. Quirk Product (FAQs double H1)",
+      "requested_path": "/product/budi-15w-wireless-charging-stand/",
+      "http_status": 200,
+      "final_url": "https://irepair-mobiles.co.uk/product/budi-15w-wireless-charging-stand/",
+      "redirect_chain": [],
+      "title": "Buy BUDI 15W Wireless Charging Stand - 3 in 1 | iRepair",
+      "description": "Buy the budi 15w wireless charging stand with fast 15W Qi charging, adapters, and stand design. Compact 3-in-1 charger from iRepair Mobiles UK.",
+      "canonical": "https://irepair-mobiles.co.uk/product/budi-15w-wireless-charging-stand/",
+      "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+      "og_sample": {
+        "og:title": "Buy BUDI 15W Wireless Charging Stand - 3 in 1 | iRepair",
+        "og:url": "https://irepair-mobiles.co.uk/product/budi-15w-wireless-charging-stand/",
+        "og:type": "product",
+        "og:image": "https://irepair-mobiles.co.uk/wp-content/uploads/2026/03/BUDI-15W-Wireless-Charging-Stand-3-in-1.jpg"
+      },
+      "twitter_card": "summary_large_image",
+      "jsonld_graph_types": [
+        "Place",
+        [
+          "MobilePhoneStore",
+          "Organization"
+        ],
+        "WebSite",
+        "ImageObject",
+        "BreadcrumbList",
+        "ItemPage",
+        "Product"
+      ],
+      "product_offers": {
+        "@type": "Offer",
+        "price": "29.99",
+        "priceValidUntil": "2027-12-31",
+        "priceCurrency": "GBP",
+        "availability": "http://schema.org/InStock",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://irepair-mobiles.co.uk/",
+          "name": "iRepair Mobiles",
+          "url": "https://irepair-mobiles.co.uk",
+          "logo": "https://irepair-mobiles.co.uk/wp-content/uploads/2023/04/Logo-1__1_-removebg-preview.png"
+        },
+        "url": "https://irepair-mobiles.co.uk/product/budi-15w-wireless-charging-stand/"
+      },
+      "h1": [
+        "BUDI 15W Wireless Charging Stand – 3 in 1",
+        "FAQs – BUDI 15W Wireless Charging Stand"
+      ]
+    },
+    {
+      "label": "7. Blog Post",
+      "requested_path": "/the-truth-about-fast-charging/",
+      "http_status": 200,
+      "final_url": "https://irepair-mobiles.co.uk/the-truth-about-fast-charging/",
+      "redirect_chain": [],
+      "title": "The Truth About Fast Charging - Is It Damaging Your Phone?",
+      "description": "Discover the Truth About Fast Charging, battery lifespan, safe charging tips, & how to choose the best charger UK without damaging your battery.",
+      "canonical": "https://irepair-mobiles.co.uk/the-truth-about-fast-charging/",
+      "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+      "og_sample": {
+        "og:title": "The Truth About Fast Charging - Is It Damaging Your Phone?",
+        "og:url": "https://irepair-mobiles.co.uk/the-truth-about-fast-charging/",
+        "og:type": "article",
+        "og:image": "https://irepair-mobiles.co.uk/wp-content/uploads/2026/03/Article-Thumbnails-1.jpg"
+      },
+      "twitter_card": "summary_large_image",
+      "jsonld_graph_types": [
+        null,
+        "Place",
+        [
+          "MobilePhoneStore",
+          "Organization"
+        ],
+        "WebSite",
+        "ImageObject",
+        "BreadcrumbList",
+        "WebPage",
+        "Person",
+        "BlogPosting",
+        "BlogPosting"
+      ],
+      "product_offers": null,
+      "h1": [
+        "The Truth About Fast Charging: Is It Damaging Your Phone?",
+        "Understanding the Basics of Fast Charging",
+        "The Charging Curve: Why Fast Doesn’t Mean Reckless",
+        "The Real Battery Killers: What Actually Damages Batteries",
+        "Smart Power: How Modern Chargers Work With Your Phone",
+        "Fast Charging Myths: Busted",
+        "Safe Fast Charging Tips From Repair Experts",
+        "How to Choose the Best Fast Charger in the UK",
+        "Conclusion",
+        "FAQs"
+      ]
+    },
+    {
+      "label": "8. Quirk Post (No H1)",
+      "requested_path": "/laptop-repair-shops-in-uk/",
+      "http_status": 200,
+      "final_url": "https://irepair-mobiles.co.uk/laptop-repair-shops-in-uk/",
+      "redirect_chain": [],
+      "title": "No.1 & Affordable Laptop Repair Shop in UK - iRepair",
+      "description": "Need laptop repair? iRepair provides expert service for all major brands, including screen repair, battery replacement, and more.",
+      "canonical": "https://irepair-mobiles.co.uk/laptop-repair-shops-in-uk/",
+      "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+      "og_sample": {
+        "og:title": "No.1 & Affordable Laptop Repair Shop in UK - iRepair",
+        "og:url": "https://irepair-mobiles.co.uk/laptop-repair-shops-in-uk/",
+        "og:type": "article",
+        "og:image": "https://irepair-mobiles.co.uk/wp-content/uploads/2024/09/choose-fix-1.dbeeb38b5ecaf94c6ff6.png"
+      },
+      "twitter_card": "summary_large_image",
+      "jsonld_graph_types": [
+        "Place",
+        [
+          "MobilePhoneStore",
+          "Organization"
+        ],
+        "WebSite",
+        "ImageObject",
+        "BreadcrumbList",
+        "WebPage",
+        "Person",
+        "Article",
+        "Article"
+      ],
+      "product_offers": null,
+      "h1": []
+    },
+    {
+      "label": "9. Redirecting Product",
+      "requested_path": "/product/used-iphone-14-pro/",
+      "http_status": 200,
+      "final_url": "https://irepair-mobiles.co.uk/product/iphone-14-pro-used-unlocked/",
+      "redirect_chain": [
+        {
+          "url": "https://irepair-mobiles.co.uk/product/used-iphone-14-pro/",
+          "status": 301
+        }
+      ],
+      "title": "Buy iPhone 14 Pro - Unlocked | Free UK Delivery at iRepair",
+      "description": "Get the iPhone 14 Pro, Unlocked. Best price in UK at iRepair Mobiles UK with 12-month warranty & free UK delivery.",
+      "canonical": "https://irepair-mobiles.co.uk/product/iphone-14-pro-used-unlocked/",
+      "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+      "og_sample": {
+        "og:title": "Buy iPhone 14 Pro - Unlocked | Free UK Delivery at iRepair",
+        "og:url": "https://irepair-mobiles.co.uk/product/iphone-14-pro-used-unlocked/",
+        "og:type": "product",
+        "og:image": "https://irepair-mobiles.co.uk/wp-content/uploads/2023/08/iPhone-14-Pro-128GB-New-A-Grade-Unlocked-Gold.jpg"
+      },
+      "twitter_card": "summary_large_image",
+      "jsonld_graph_types": [
+        "Place",
+        [
+          "MobilePhoneStore",
+          "Organization"
+        ],
+        "WebSite",
+        "ImageObject",
+        "BreadcrumbList",
+        "ItemPage",
+        "Product"
+      ],
+      "product_offers": {
+        "@type": "Offer",
+        "price": "349.00",
+        "priceValidUntil": "2027-12-31",
+        "priceCurrency": "GBP",
+        "availability": "http://schema.org/InStock",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://irepair-mobiles.co.uk/",
+          "name": "iRepair Mobiles",
+          "url": "https://irepair-mobiles.co.uk",
+          "logo": "https://irepair-mobiles.co.uk/wp-content/uploads/2023/04/Logo-1__1_-removebg-preview.png"
+        },
+        "url": "https://irepair-mobiles.co.uk/product/iphone-14-pro-used-unlocked/"
+      },
+      "h1": [
+        "iPhone 14 Pro – Unlocked – Used"
+      ]
+    },
+    {
+      "label": "10. Product Category",
+      "requested_path": "/mobile-repairing-guides/",
+      "http_status": 200,
+      "final_url": "https://irepair-mobiles.co.uk/mobile-repairing-guides/",
+      "redirect_chain": [],
+      "title": "Comprehensive Mobile Repairing Services in UK - iRepair",
+      "description": "Discover The Best Mobile Phone Repairing Shop in UK - iRepair. Your Ultimate Companion in Mobile Related Issues. Contact Us Now.",
+      "canonical": "https://irepair-mobiles.co.uk/mobile-repairing-guides/",
+      "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+      "og_sample": {
+        "og:title": "Comprehensive Mobile Repairing Services in UK - iRepair",
+        "og:url": "https://irepair-mobiles.co.uk/mobile-repairing-guides/",
+        "og:type": "article",
+        "og:image": ""
+      },
+      "twitter_card": "summary_large_image",
+      "jsonld_graph_types": [
+        "Place",
+        "MobilePhoneStore",
+        "WebSite",
+        "BreadcrumbList",
+        "CollectionPage"
+      ],
+      "product_offers": null,
+      "h1": [
+        "How Much Storage Do You Need on iPhone 14?"
+      ]
+    }
+  ]
+}
