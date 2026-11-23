@@ -882,8 +882,8 @@ async function startServer() {
     }
   }
 
-  const serverInstance = server.listen(PORT, '0.0.0.0', () => {
-    console.log(`iRepair Mobiles CMS Server running on http://0.0.0.0:${PORT}`);
+  const serverInstance = server.listen(PORT, () => {
+    console.log(`iRepair Mobiles CMS Server running on port ${PORT}`);
   });
 
   const handleShutdown = () => {

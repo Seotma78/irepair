@@ -57,11 +57,12 @@ export class DatabaseWrapper {
   }
 
   private inTransaction = false;
+  public suppressSave = false;
 
   run(sqlQuery: string, params: any[] = []): { changes: number } {
     const sanitized = params.map((p) => (p === undefined ? null : p));
     this.db.run(sqlQuery, sanitized);
-    if (!this.inTransaction) {
+    if (!this.inTransaction && !this.suppressSave) {
       this.save();
     }
     return { changes: 1 };
@@ -69,7 +70,7 @@ export class DatabaseWrapper {
 
   exec(sqlStatements: string) {
     this.db.exec(sqlStatements);
-    if (!this.inTransaction) {
+    if (!this.inTransaction && !this.suppressSave) {
       this.save();
     }
   }
@@ -81,7 +82,9 @@ export class DatabaseWrapper {
       const result = fn();
       this.db.exec('COMMIT');
       this.inTransaction = false;
-      this.save();
+      if (!this.suppressSave) {
+        this.save();
+      }
       return result;
     } catch (err) {
       try {
@@ -98,7 +101,12 @@ export async function getDb(): Promise<DatabaseWrapper> {
     return new DatabaseWrapper(dbInstance);
   }
 
-  const SQL = await initSqlJs();
+  const wasmPath = path.resolve(process.cwd(), 'node_modules', 'sql.js', 'dist', 'sql-wasm.wasm');
+  const SQL = await initSqlJs(
+    fs.existsSync(wasmPath)
+      ? { locateFile: () => wasmPath }
+      : undefined
+  );
   if (!fs.existsSync(DB_DIR)) {
     fs.mkdirSync(DB_DIR, { recursive: true });
   }
@@ -113,7 +121,12 @@ export async function getDb(): Promise<DatabaseWrapper> {
 
   dbInstance = db;
   const wrapper = new DatabaseWrapper(db);
-  await initializeSchemaAndSeeds(wrapper);
+  wrapper.suppressSave = true;
+  try {
+    await initializeSchemaAndSeeds(wrapper);
+  } finally {
+    wrapper.suppressSave = false;
+  }
   return wrapper;
 }
 
