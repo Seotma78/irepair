@@ -330,8 +330,8 @@ export const HeroSliderWidget: React.FC<WidgetRenderProps> = ({ settings }) => {
                     <Wrench className="w-4 h-4" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-base text-slate-900">Instant Repair Price Check</h3>
-                    <p className="text-xs text-slate-500">Select device fault for guaranteed quote</p>
+                    <h3 className="font-bold text-base text-slate-900">Request a Repair Quote</h3>
+                    <p className="text-xs text-slate-500">Team provides your price after submission</p>
                   </div>
                 </div>
 
@@ -402,7 +402,7 @@ export const HeroSliderWidget: React.FC<WidgetRenderProps> = ({ settings }) => {
                     <span className="absolute inset-0 -translate-x-[150%] group-hover:translate-x-[150%] bg-gradient-to-r from-transparent via-white/35 to-transparent skew-x-[-25deg] transition-transform duration-800 ease-out pointer-events-none" />
 
                     <Wrench className="relative z-10 w-4 h-4 transition-transform duration-300 ease-out group-hover:rotate-12 group-hover:scale-110" />
-                    <span className="relative z-10">Get Instant Quote & Book</span>
+                    <span className="relative z-10">Request Quote &amp; Book</span>
                     <ArrowRight className="relative z-10 w-4 h-4 transition-transform duration-300 ease-out group-hover:translate-x-1" />
                   </button>
                 </form>

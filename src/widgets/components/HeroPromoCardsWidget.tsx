@@ -16,11 +16,11 @@ export interface PromoCardItem {
 
 export interface HeroPromoCardsSettings {
   columnsDesktop?: number; // 1, 2, 3, or 4 (default: 3)
-  columnsTablet?: number;  // 1 or 2 (default: 2)
+  columnsTablet?: number;  // 1, 2, or 3 (default: 3)
   columnsMobile?: number;  // 1 (default: 1)
-  gap?: number;            // in pixels (default: 24)
+  gap?: number;            // in pixels (default: 20)
   borderRadius?: number;   // in pixels (default: 16)
-  cardMinHeight?: number;  // in pixels (default: 340)
+  cardMinHeight?: number;  // in pixels (default: 260)
   overlayOpacity?: number; // 0 to 1 (default: 0.15)
   accentColor?: string;    // button background color (default: #E6007E)
   cards?: PromoCardItem[];
@@ -39,13 +39,13 @@ export const DEFAULT_PROMO_CARDS: PromoCardItem[] = [
   },
   {
     id: 'promo_sell',
-    heading: 'Sell & Get Instant Cash',
+    heading: 'Sell Your Phone for Cash',
     subheading: 'Fair quotes & fast bank payouts',
     buttonText: 'Sell Now',
-    buttonLink: '/sell-my-phone/',
+    buttonLink: 'https://webuyyourtech.co.uk/',
     bgImage: 'https://irepair-mobiles.co.uk/wp-content/uploads/2025/10/Sell-Your-Phone.webp',
     altText: 'iRepair store interior with staff and customers trading in devices',
-    isExternal: false,
+    isExternal: true,
   },
   {
     id: 'promo_upgrade',
@@ -75,14 +75,14 @@ export const HeroPromoCardsWidget: React.FC<HeroPromoCardsWidgetProps> = ({
 
   const cards = settings.cards && settings.cards.length > 0 ? settings.cards : DEFAULT_PROMO_CARDS;
 
-  // Customizable column count per breakpoint
+  // Customizable column count per breakpoint (3 on tablet & laptop, 1 on mobile)
   const colsDesktop = Math.min(Math.max(Number(settings.columnsDesktop || 3), 1), 4);
-  const colsTablet = Math.min(Math.max(Number(settings.columnsTablet || 2), 1), 2);
+  const colsTablet = Math.min(Math.max(Number(settings.columnsTablet || 3), 1), 3);
   const colsMobile = Math.min(Math.max(Number(settings.columnsMobile || 1), 1), 2);
 
-  const gap = Number(settings.gap ?? 24);
+  const gap = Number(settings.gap ?? 20);
   const borderRadius = Number(settings.borderRadius ?? 16);
-  const cardMinHeight = Number(settings.cardMinHeight ?? 340);
+  const cardMinHeight = Number(settings.cardMinHeight ?? 260);
   const overlayOpacity = Number(settings.overlayOpacity ?? 0.15);
   const rawAccent = settings.accentColor || '#E6007E';
   const accentColor =
@@ -99,7 +99,11 @@ export const HeroPromoCardsWidget: React.FC<HeroPromoCardsWidgetProps> = ({
           : 'lg:grid-cols-3';
 
   const tabletColsClass =
-    colsTablet === 1 ? 'md:grid-cols-1' : 'md:grid-cols-2';
+    colsTablet === 1
+      ? 'md:grid-cols-1'
+      : colsTablet === 2
+        ? 'md:grid-cols-2'
+        : 'md:grid-cols-3';
 
   const mobileColsClass =
     colsMobile === 2 ? 'grid-cols-2' : 'grid-cols-1';
@@ -133,7 +137,7 @@ export const HeroPromoCardsWidget: React.FC<HeroPromoCardsWidgetProps> = ({
   return (
     <section
       aria-label="iRepair Promotional Highlights"
-      className="w-full py-6 md:py-8 lg:py-10"
+      className="w-full py-5 md:py-7 lg:py-8"
       style={
         {
           '--cols-desktop': colsDesktop,
@@ -204,22 +208,22 @@ export const HeroPromoCardsWidget: React.FC<HeroPromoCardsWidgetProps> = ({
                 </div>
 
                 {/* Card Content Overlay */}
-                <div className="relative z-10 flex flex-col justify-between h-full p-6 sm:p-7 lg:p-8 flex-1">
+                <div className="relative z-10 flex flex-col justify-between h-full p-5 sm:p-5 lg:p-6 flex-1">
                   {/* Refined Heading & Subheading */}
-                  <div className="space-y-2 max-w-[92%]">
+                  <div className="space-y-1.5 max-w-[94%]">
                     <h3
-                      className="text-white font-extrabold text-xl sm:text-2xl lg:text-[26px] leading-[1.2] tracking-tight drop-shadow-sm font-heading"
+                      className="text-white font-extrabold text-xl md:text-[19px] lg:text-[24px] leading-[1.2] tracking-tight drop-shadow-sm font-heading"
                       style={{ textWrap: 'balance' }}
                     >
                       {card.heading}
                     </h3>
-                    <p className="text-white/90 text-xs sm:text-sm md:text-[15px] font-medium leading-relaxed drop-shadow-xs">
+                    <p className="text-white/90 text-xs md:text-[13px] lg:text-[15px] font-medium leading-relaxed drop-shadow-xs">
                       {card.subheading}
                     </p>
                   </div>
 
                   {/* Modern CTA Button with #C4006B Glow Hover & Sliding Arrow */}
-                  <div className="pt-8">
+                  <div className="pt-5">
                     {card.isExternal ? (
                       <a
                         href={card.buttonLink}

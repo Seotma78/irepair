@@ -290,8 +290,6 @@ export const BasingstokeRepairShopPage: React.FC = () => {
 
   // Compute selected issue details
   const activeIssueObj = ISSUES_LIST.find((i) => i.id === selectedIssue) || ISSUES_LIST[0];
-  const originalQuote = activeIssueObj.basePrice;
-  const discountedQuote = Math.round(originalQuote * 0.8 * 100) / 100;
 
   const scrollToQuote = () => {
     const el = document.getElementById('quote-section');
@@ -787,17 +785,17 @@ export const BasingstokeRepairShopPage: React.FC = () => {
               {/* Instant Quote Result Bar */}
               <div className="bg-white rounded-2xl p-5 border border-pink-200 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-4">
                 <div>
-                  <div className="text-xs text-slate-500">Estimated Repair Cost in Basingstoke:</div>
-                  <div className="flex items-baseline gap-2 mt-0.5">
-                    <span className="text-2xl sm:text-3xl font-black text-slate-900">
-                      £{discountedQuote.toFixed(2)}
-                    </span>
-                    <span className="text-sm text-slate-400 line-through">
-                      £{originalQuote.toFixed(2)}
+                  <div className="text-xs text-slate-500">Repair Quote in Basingstoke:</div>
+                  <div className="flex flex-wrap items-center gap-2 mt-0.5">
+                    <span className="text-lg sm:text-xl font-black text-slate-900">
+                      Provided After Submission
                     </span>
                     <span className="text-xs font-bold text-[#DF0C88] bg-pink-50 px-2 py-0.5 rounded-full">
-                      20% OFF Special
+                      20% OFF Online Query
                     </span>
+                  </div>
+                  <div className="text-[11px] text-slate-500 mt-1">
+                    Our Basingstoke team will provide your tailored repair price in response to your submitted query.
                   </div>
                   <div className="text-[11px] text-slate-400 mt-1 flex items-center gap-1">
                     <Clock className="w-3.5 h-3.5 text-[#DF0C88]" />
@@ -808,10 +806,10 @@ export const BasingstokeRepairShopPage: React.FC = () => {
                 <button
                   type="button"
                   onClick={handleBookFromQuote}
-                  className="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-[#DF0C88] hover:bg-[#c50875] text-white font-bold text-sm shadow-md transition-all hover:scale-105 inline-flex items-center justify-center gap-2 cursor-pointer"
+                  className="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-[#DF0C88] hover:bg-[#c50875] text-white font-bold text-sm shadow-md transition-all hover:scale-105 inline-flex items-center justify-center gap-2 cursor-pointer shrink-0"
                 >
                   <Check className="w-4 h-4" />
-                  <span>Book This Repair (20% Off)</span>
+                  <span>Request Quote &amp; Book</span>
                 </button>
               </div>
 

@@ -439,11 +439,11 @@ const FlagshipSmartphoneStage: React.FC<FlagshipPhoneProps> = ({
     // Center Quote Value inside Arc
     ctx.fillStyle = 'rgba(255, 255, 255, 0.58)';
     ctx.font = '700 17px "Plus Jakarta Sans", system-ui, sans-serif';
-    ctx.fillText(isBuyback ? 'INSTANT PAYOUT' : 'FIXED UK ESTIMATE', cx, cy - 22);
+    ctx.fillText(isBuyback ? 'INSTANT VALUATION' : 'REPAIR ESTIMATE', cx, cy - 22);
 
     ctx.fillStyle = '#FFFFFF';
-    ctx.font = '900 44px "Plus Jakarta Sans", system-ui, sans-serif';
-    ctx.fillText(quoteValue || (isBuyback ? 'Up to £620' : 'From £149'), cx, cy + 24);
+    ctx.font = '900 34px "Plus Jakarta Sans", system-ui, sans-serif';
+    ctx.fillText(quoteValue || 'Quote on Submit', cx, cy + 24);
 
     ctx.fillStyle = isBuyback ? '#34D399' : '#F472B6';
     ctx.font = '700 18px "Plus Jakarta Sans", system-ui, sans-serif';
@@ -841,7 +841,7 @@ export const Hero3DStage: React.FC<Hero3DStageProps> = ({
   brandId,
   modelId,
   modelName = 'iPhone 15 Pro',
-  quoteValue = 'From £149',
+  quoteValue = 'Quote on Submit',
   quoteMeta = '45 mins',
   fallbackImage,
   enable3D = true,

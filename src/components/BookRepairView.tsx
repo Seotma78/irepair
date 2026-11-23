@@ -75,20 +75,7 @@ export const BookRepairView: React.FC = () => {
   const activeModelObj = DEVICE_MODELS.find(m => m.id === selectedModel) || availableModels[0];
   const activeStoreObj = STORE_LOCATIONS.find(s => s.id === selectedStoreId) || STORE_LOCATIONS[0];
 
-  // Dynamic pricing calculation based on model tiers
-  const getCalculatedPrice = (): number => {
-    let price = activeIssueObj.basePrice;
-    if (activeModelObj?.id.includes('pro-max') || activeModelObj?.id.includes('ultra')) {
-      price += 40;
-    } else if (activeModelObj?.id.includes('pro') || activeModelObj?.id.includes('plus')) {
-      price += 25;
-    } else if (activeModelObj?.category === 'laptop') {
-      price += 35;
-    }
-    return price;
-  };
-
-  const currentPrice = getCalculatedPrice();
+  const currentPrice = 0;
 
   const handleSubmitBooking = (e: React.FormEvent) => {
     e.preventDefault();
@@ -139,12 +126,13 @@ export const BookRepairView: React.FC = () => {
           name: `Repair: ${activeModelObj?.name} - ${activeIssueObj.name}`,
           product_id: 9901,
           quantity: 1,
-          subtotal: currentPrice.toString(),
-          total: currentPrice.toString(),
+          subtotal: '0.00',
+          total: '0.00',
           meta_data: [
             { key: 'Device Category', value: selectedCategory },
             { key: 'Device Model', value: activeModelObj?.name },
             { key: 'Fault Description', value: activeIssueObj.name },
+            { key: 'Quote Status', value: 'To be provided by team after submission' },
             { key: 'Service Method', value: repairMethod },
             { key: 'Store Location', value: activeStoreObj?.name },
             { key: 'Scheduled Slot', value: `${appointmentDate} at ${appointmentTime}` },
@@ -173,7 +161,7 @@ export const BookRepairView: React.FC = () => {
           Book Your Device Repair
         </h1>
         <p className="text-xs sm:text-sm text-slate-600 mt-2">
-          Select your device, see transparent live pricing, and choose between walk-in branch visit, free postal mail-in, or call-out service.
+          Select your device and fault, and choose between walk-in branch visit, free postal mail-in, or call-out service. Our team will provide your repair price shortly after submission.
         </p>
       </div>
 
@@ -396,8 +384,8 @@ export const BookRepairView: React.FC = () => {
                     >
                       <div className="flex items-start justify-between gap-2">
                         <div className="font-bold text-xs text-slate-900">{issue.name}</div>
-                        <div className="text-xs font-bold text-[#DF0C88] tabular-nums">
-                          ~£{issue.basePrice}
+                        <div className="text-[11px] font-bold text-[#DF0C88] shrink-0">
+                          Quote on Submit
                         </div>
                       </div>
                       <p className="text-[11px] text-slate-500 mt-2 line-clamp-2">
@@ -728,7 +716,7 @@ export const BookRepairView: React.FC = () => {
                   className="bg-[#DF0C88] hover:bg-[#C50875] disabled:bg-slate-300 text-white font-bold py-3 px-8 rounded-xl text-sm flex items-center gap-2 shadow-md transition-all active:scale-[0.98]"
                 >
                   <CheckCircle2 className="w-4 h-4" />
-                  <span>Confirm & Book Repair</span>
+                  <span>Submit Quote Request &amp; Book</span>
                 </button>
               </div>
             </form>
@@ -749,7 +737,7 @@ export const BookRepairView: React.FC = () => {
                   Job Reference: <span className="text-[#DF0C88]">{completedBooking.id}</span>
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600 max-w-md mx-auto">
-                  A confirmation SMS & email have been dispatched to <strong>{completedBooking.customerEmail}</strong>.
+                  A confirmation SMS &amp; email have been dispatched to <strong>{completedBooking.customerEmail}</strong>. Our repair team will provide your tailored quote shortly in response to your submitted query.
                 </p>
               </div>
 
@@ -774,9 +762,9 @@ export const BookRepairView: React.FC = () => {
                     </span>
                   </div>
                 )}
-                <div className="flex justify-between py-1 pt-2 font-bold text-sm">
-                  <span>Estimated Total:</span>
-                  <span className="text-[#DF0C88] tabular-nums">£{completedBooking.price.toFixed(2)}</span>
+                <div className="flex justify-between items-center py-1 pt-2 font-bold text-xs sm:text-sm gap-2">
+                  <span>Repair Quote:</span>
+                  <span className="text-[#DF0C88] text-right">Will be provided by team after submission</span>
                 </div>
               </div>
 
@@ -814,7 +802,7 @@ export const BookRepairView: React.FC = () => {
               Repair Summary
             </h3>
             <p className="text-[11px] text-slate-400 mt-0.5">
-              Live quote based on selected fault & model
+              Our team will provide your repair quote after submission
             </p>
           </div>
 
@@ -847,14 +835,16 @@ export const BookRepairView: React.FC = () => {
             )}
           </div>
 
-          <div className="border-t border-slate-800 pt-4 flex items-baseline justify-between">
-            <div>
-              <span className="text-xs text-slate-400 block">Total Est. Price</span>
-              <span className="text-[10px] text-slate-500">Includes VAT, Parts & Labour</span>
+          <div className="border-t border-slate-800 pt-4 space-y-1">
+            <div className="flex items-baseline justify-between gap-3">
+              <span className="text-xs text-slate-400">Repair Quote</span>
+              <span className="text-sm font-extrabold text-pink-300 text-right">
+                Provided After Submission
+              </span>
             </div>
-            <span className="text-2xl font-extrabold text-white tabular-nums">
-              £{currentPrice.toFixed(2)}
-            </span>
+            <p className="text-[11px] text-slate-400 leading-relaxed">
+              Price will be confirmed by our repair team in response to your submitted query. Includes VAT, parts &amp; labour.
+            </p>
           </div>
 
           <div className="space-y-2 pt-2 border-t border-slate-800/80 text-[11px] text-slate-400">

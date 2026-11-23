@@ -205,8 +205,8 @@ export const TrackRepairView: React.FC = () => {
               <span className="font-semibold text-slate-800">{activeBooking.customerName}</span>
             </div>
             <div>
-              <span className="text-slate-400 block">Repair Total:</span>
-              <span className="font-bold text-[#DF0C88] tabular-nums text-sm">£{activeBooking.price.toFixed(2)}</span>
+              <span className="text-slate-400 block">Repair Quote:</span>
+              <span className="font-bold text-[#DF0C88] text-xs sm:text-sm">Provided by team on assessment</span>
             </div>
             {activeBooking.notes && (
               <div className="sm:col-span-2 pt-2 border-t border-slate-200">

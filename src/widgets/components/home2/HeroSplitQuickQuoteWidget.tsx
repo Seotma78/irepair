@@ -11,38 +11,6 @@ import type { QuoteServiceMode } from './Hero3DStage';
 
 const Hero3DStage = lazy(() => import('./Hero3DStage'));
 
-const QUICK_REPAIR_PRICES: Record<string, { screenPrice: number; batteryPrice: number; duration: string }> = {
-  'iphone-15-pro-max': { screenPrice: 159, batteryPrice: 69, duration: '45 mins' },
-  'iphone-15-pro': { screenPrice: 149, batteryPrice: 69, duration: '45 mins' },
-  'iphone-15': { screenPrice: 129, batteryPrice: 65, duration: '40 mins' },
-  'iphone-14-pro-max': { screenPrice: 139, batteryPrice: 59, duration: '45 mins' },
-  'iphone-14-pro': { screenPrice: 129, batteryPrice: 59, duration: '45 mins' },
-  'iphone-14': { screenPrice: 109, batteryPrice: 55, duration: '35 mins' },
-  'iphone-13': { screenPrice: 89, batteryPrice: 49, duration: '30 mins' },
-  'samsung-s24-ultra': { screenPrice: 169, batteryPrice: 69, duration: '45 mins' },
-  'samsung-s24': { screenPrice: 139, batteryPrice: 59, duration: '45 mins' },
-  'samsung-s23-ultra': { screenPrice: 159, batteryPrice: 59, duration: '45 mins' },
-  'pixel-8-pro': { screenPrice: 135, batteryPrice: 59, duration: '45 mins' },
-  'macbook-pro-14-m3': { screenPrice: 189, batteryPrice: 129, duration: 'Same day' },
-  'apple-watch-s9': { screenPrice: 99, batteryPrice: 55, duration: '60 mins' },
-};
-
-const QUICK_BUYBACK_PRICES: Record<string, number> = {
-  'iphone-15-pro-max': 690,
-  'iphone-15-pro': 620,
-  'iphone-15': 470,
-  'iphone-14-pro-max': 510,
-  'iphone-14-pro': 440,
-  'iphone-14': 350,
-  'iphone-13': 290,
-  'samsung-s24-ultra': 650,
-  'samsung-s24': 410,
-  'samsung-s23-ultra': 450,
-  'pixel-8-pro': 380,
-  'macbook-pro-14-m3': 980,
-  'apple-watch-s9': 230,
-};
-
 const HERO_EASE = [0.22, 1, 0.36, 1] as const;
 
 export const HeroSplitQuickQuoteWidget: React.FC<WidgetRenderProps> = ({ settings = {} }) => {
@@ -58,22 +26,13 @@ export const HeroSplitQuickQuoteWidget: React.FC<WidgetRenderProps> = ({ setting
   const heroImage = settings.heroImage || HERO_SPLIT_QUICK_QUOTE_DEFAULTS.heroImage;
   const enable3DHero = settings.enable3DHero !== false;
   const livePricingBadge = settings.livePricingBadge ?? HERO_SPLIT_QUICK_QUOTE_DEFAULTS.livePricingBadge;
-  const quoteMode: 'both' | 'repair' | 'buyback' =
-    settings.quoteMode || HERO_SPLIT_QUICK_QUOTE_DEFAULTS.quoteMode;
 
   const trustBadges: Home2HeroTrustBadge[] =
     Array.isArray(settings.trustBadges) && settings.trustBadges.length > 0
       ? settings.trustBadges
       : HERO_SPLIT_QUICK_QUOTE_DEFAULTS.trustBadges;
 
-  const [serviceType, setServiceType] = useState<QuoteServiceMode>(
-    quoteMode === 'buyback' ? 'buyback' : 'screen'
-  );
-
-  useEffect(() => {
-    if (quoteMode === 'repair' && serviceType === 'buyback') setServiceType('screen');
-    if (quoteMode === 'buyback') setServiceType('buyback');
-  }, [quoteMode, serviceType]);
+  const [serviceType, setServiceType] = useState<QuoteServiceMode>('screen');
 
   const selectableBrands = useMemo(
     () =>
@@ -109,41 +68,25 @@ export const HeroSplitQuickQuoteWidget: React.FC<WidgetRenderProps> = ({ setting
   );
 
   const quoteEstimate = useMemo(() => {
-    if (serviceType === 'buyback') {
-      const cash =
-        QUICK_BUYBACK_PRICES[activeModel?.id || ''] ||
-        (activeBrand?.category === 'laptop' ? 680 : 320);
-      return {
-        label: 'Guaranteed payout',
-        value: `Up to £${cash}`,
-        meta: 'Instant bank transfer',
-        statusPill: 'Instant Buyback · Same-Day Payout',
-        dotColor: '#10B981',
-      };
-    }
-
-    const mapped = QUICK_REPAIR_PRICES[activeModel?.id || ''];
     if (serviceType === 'battery') {
-      const price = mapped?.batteryPrice || (activeBrand?.category === 'laptop' ? 119 : 59);
       return {
-        label: 'Battery replacement',
-        value: `From £${price}`,
+        label: 'Battery replacement quote',
+        value: 'Provided After Submit',
         meta: '30 mins express',
         statusPill: 'Battery Ready · 30-Min Express',
         dotColor: '#E6007E',
       };
     }
 
-    const price = mapped?.screenPrice || (activeBrand?.category === 'laptop' ? 169 : 99);
-    const duration = mapped?.duration || '45 mins';
+    const duration = activeBrand?.category === 'laptop' ? 'Same day' : '45 mins';
     return {
-      label: 'Estimated screen fix',
-      value: `From £${price}`,
+      label: 'Screen repair quote',
+      value: 'Provided After Submit',
       meta: duration,
-      statusPill: 'Live Quote Ready · 45-Min Express',
+      statusPill: 'Quote Request · 45-Min Express',
       dotColor: '#10B981',
     };
-  }, [serviceType, activeModel, activeBrand]);
+  }, [serviceType, activeBrand]);
 
   const statusBadgeDisplay =
     livePricingBadge && livePricingBadge !== HERO_SPLIT_QUICK_QUOTE_DEFAULTS.livePricingBadge
@@ -160,11 +103,6 @@ export const HeroSplitQuickQuoteWidget: React.FC<WidgetRenderProps> = ({ setting
   };
 
   const handleContinueQuote = () => {
-    if (serviceType === 'buyback') {
-      setCurrentPage('sell-my-phone');
-      return;
-    }
-
     const cat: DeviceCategory = (activeModel?.category || activeBrand?.category || 'smartphone') as DeviceCategory;
     startRepairBooking({
       category: cat,
@@ -374,19 +312,11 @@ export const HeroSplitQuickQuoteWidget: React.FC<WidgetRenderProps> = ({ setting
                     </label>
                     <select
                       value={serviceType}
-                      disabled={quoteMode === 'buyback'}
                       onChange={(e) => setServiceType(e.target.value as QuoteServiceMode)}
-                      className="w-full px-3 py-2.5 rounded-xl bg-[#F8FAFC] border border-slate-200 text-xs font-semibold text-[#0B0D12] focus:outline-none focus:ring-2 focus:ring-[#E6007E]/25 focus:border-[#E6007E] disabled:opacity-80 cursor-pointer"
+                      className="w-full px-3 py-2.5 rounded-xl bg-[#F8FAFC] border border-slate-200 text-xs font-semibold text-[#0B0D12] focus:outline-none focus:ring-2 focus:ring-[#E6007E]/25 focus:border-[#E6007E] cursor-pointer"
                     >
-                      {(quoteMode === 'both' || quoteMode === 'repair') && (
-                        <>
-                          <option value="screen">Screen Repair</option>
-                          <option value="battery">Battery Replacement</option>
-                        </>
-                      )}
-                      {(quoteMode === 'both' || quoteMode === 'buyback') && (
-                        <option value="buyback">Sell Device (Buyback)</option>
-                      )}
+                      <option value="screen">Screen Repair</option>
+                      <option value="battery">Battery Replacement</option>
                     </select>
                   </div>
 

@@ -350,10 +350,6 @@ export const SolihullRepairShopPage: React.FC = () => {
     };
   }, []);
 
-  // Compute selected issue details
-  const activeIssueObj = ISSUES_LIST.find((i) => i.id === selectedIssue) || ISSUES_LIST[0];
-  const originalQuote = activeIssueObj.basePrice;
-  const discountedQuote = Math.round(originalQuote * 0.8 * 100) / 100;
 
   const scrollToQuote = () => {
     const el = document.getElementById('quote-section');
@@ -825,7 +821,7 @@ export const SolihullRepairShopPage: React.FC = () => {
                             <div className="text-[11px] text-slate-500">Est. turnaround: {issue.time}</div>
                           </div>
                           <div className="text-right">
-                            <span className="text-xs sm:text-sm font-bold text-[#DF0C88]">From £{issue.basePrice}</span>
+                            <span className="text-xs font-bold text-[#DF0C88]">Quote on Request</span>
                           </div>
                         </div>
                       );
@@ -837,27 +833,26 @@ export const SolihullRepairShopPage: React.FC = () => {
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-6 flex flex-col sm:flex-row items-center justify-between gap-4">
                   <div>
                     <span className="inline-block px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xs mb-1">
-                      20% Online Discount Included
+                      Team Quote Provided After Submission
                     </span>
                     <h4 className="text-base sm:text-lg font-bold">
-                      Estimated Repair Quote for Solihull Branch
+                      Repair Quote for Solihull Branch
                     </h4>
                     <p className="text-xs text-slate-400">
-                      Genuine parts, certified technician &amp; 6 months warranty included.
+                      Our team will respond with your tailored repair price once your query is submitted. 6 months warranty included.
                     </p>
                   </div>
 
                   <div className="text-center sm:text-right shrink-0">
-                    <div className="flex items-baseline justify-center sm:justify-end gap-2">
-                      <span className="text-xs text-slate-400 line-through">£{originalQuote.toFixed(2)}</span>
-                      <span className="text-2xl sm:text-3xl font-black text-[#DF0C88]">£{discountedQuote.toFixed(2)}</span>
+                    <div className="text-xs font-bold text-pink-300">
+                      Price Confirmed in Response
                     </div>
                     <button
                       type="button"
                       onClick={handleBookFromQuote}
                       className="mt-2 px-6 py-2.5 rounded-xl bg-[#DF0C88] hover:bg-[#c50875] text-white font-bold text-xs sm:text-sm shadow-md transition-all inline-flex items-center gap-1.5 cursor-pointer"
                     >
-                      <span>Book Repair Now</span>
+                      <span>Request Quote &amp; Book</span>
                       <ArrowRight className="w-4 h-4" />
                     </button>
                   </div>

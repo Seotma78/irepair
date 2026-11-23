@@ -416,7 +416,7 @@ export const Header: React.FC = () => {
                     <Smartphone className="w-4 h-4 text-[#DF0C88] shrink-0" />
                     <div>
                       <div className="font-bold text-slate-900">Screen Replacement</div>
-                      <div className="text-[11px] text-slate-500">From £49 · Ready in 30 Mins</div>
+                      <div className="text-[11px] text-slate-500">Quote on Request · Ready in 30 Mins</div>
                     </div>
                   </button>
 
@@ -427,7 +427,7 @@ export const Header: React.FC = () => {
                     <div className="w-4 h-4 text-emerald-600 font-mono font-bold text-xs flex items-center justify-center shrink-0">🔋</div>
                     <div>
                       <div className="font-bold text-slate-900">Battery Replacement</div>
-                      <div className="text-[11px] text-slate-500">From £35 · Certified High-Capacity</div>
+                      <div className="text-[11px] text-slate-500">Quote on Request · Certified High-Capacity</div>
                     </div>
                   </button>
 
@@ -768,18 +768,17 @@ export const Header: React.FC = () => {
               <Search className="w-5 h-5" />
             </button>
 
-            {/* Primary Action Button: Sell Your Devices (Navigates to /sell-my-phone/) */}
+            {/* Primary Action Button: Sell Your Phone (Links directly to WeBuyYourTech.co.uk) */}
             <a 
-              href={SELL_MY_PHONE_ROUTE}
-              onClick={(e) => {
-                e.preventDefault();
-                navigateTo('sell-my-phone');
-              }}
+              href={WEBUY_TECH_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-[#DF0C88] hover:bg-[#C50875] text-white text-xs xl:text-sm font-bold px-3 py-2 sm:px-4 sm:py-2.5 rounded-xl shadow-xs hover:shadow transition-all active:scale-[0.98] inline-flex items-center gap-1.5 cursor-pointer whitespace-nowrap shrink-0 min-h-[40px]"
-              title="Sell your devices for instant UK cash"
+              title="Sell your phone for instant UK cash on WeBuyYourTech.co.uk"
             >
               <Coins className="w-4 h-4" />
-              <span>Sell Your Devices</span>
+              <span>Sell Your Phone</span>
+              <ExternalLink className="w-3.5 h-3.5 opacity-90" />
             </a>
 
             {/* Mobile Hamburger Menu Toggle */}
@@ -1021,30 +1020,18 @@ export const Header: React.FC = () => {
               Contact Us &amp; Support
             </button>
 
-            {/* Primary Action Button: Sell Your Devices */}
-            <div className="pt-2 pb-1 space-y-2">
-              <a 
-                href={SELL_MY_PHONE_ROUTE}
-                onClick={(e) => {
-                  e.preventDefault();
-                  navigateTo('sell-my-phone');
-                }}
-                className="w-full bg-[#DF0C88] hover:bg-[#C50875] text-white py-3 px-4 rounded-xl font-bold text-sm shadow-md transition-all active:scale-[0.98] flex items-center justify-center gap-2 cursor-pointer"
-              >
-                <Coins className="w-4 h-4" />
-                <span>Sell Your Devices (/sell-my-phone/)</span>
-                <ArrowRight className="w-4 h-4" />
-              </a>
-
+            {/* Primary Action Button: Sell Your Phone */}
+            <div className="pt-2 pb-1">
               <a 
                 href={WEBUY_TECH_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setMobileMenuOpen(false)}
-                className="w-full bg-slate-900 hover:bg-slate-800 text-slate-200 py-2.5 px-4 rounded-xl font-semibold text-xs border border-slate-700 transition-all flex items-center justify-center gap-2"
+                className="w-full bg-[#DF0C88] hover:bg-[#C50875] text-white py-3 px-4 rounded-xl font-bold text-sm shadow-md transition-all active:scale-[0.98] flex items-center justify-center gap-2 cursor-pointer"
               >
-                <span>Instant Valuation on WeBuyYourTech.co.uk</span>
-                <ExternalLink className="w-3.5 h-3.5 text-pink-400" />
+                <Coins className="w-4 h-4" />
+                <span>Sell Your Phone</span>
+                <ExternalLink className="w-4 h-4" />
               </a>
             </div>
 

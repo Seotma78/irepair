@@ -339,10 +339,10 @@ export const CommonRepairsWidget: React.FC<WidgetRenderProps> = ({ settings }) =
                     <div className="px-4 sm:px-5 pb-4 sm:pb-5 pt-3 border-t border-slate-100 flex items-center justify-between gap-2">
                       <div>
                         <span className="text-[10px] font-semibold text-slate-400 block uppercase tracking-wider">
-                          From Price
+                          Repair Quote
                         </span>
-                        <span className="text-base sm:text-lg font-black text-slate-900 tabular-nums">
-                          £{(item.basePrice || item.base_price || 39).toFixed(2)}
+                        <span className="text-xs font-extrabold text-[#DF0C88]">
+                          After Submission
                         </span>
                       </div>
 

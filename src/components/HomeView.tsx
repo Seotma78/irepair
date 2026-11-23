@@ -625,18 +625,9 @@ export const HomeView: React.FC = () => {
                   rel="noopener noreferrer"
                   className="w-full bg-[#DF0C88] hover:bg-[#C50875] text-white font-bold py-3.5 px-6 rounded-xl shadow-lg shadow-pink-900/40 transition-all active:scale-[0.98] inline-flex items-center justify-center gap-2.5 text-sm cursor-pointer group"
                 >
-                  <span>Sell on WeBuyYourTech.co.uk</span>
+                  <span>Sell Your Phone on WeBuyYourTech.co.uk</span>
                   <ExternalLink className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
                 </a>
-
-                <button
-                  type="button"
-                  onClick={() => setCurrentPage('sell-my-phone')}
-                  className="w-full bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-semibold py-2.5 px-4 rounded-xl text-xs transition-colors flex items-center justify-center gap-2 cursor-pointer"
-                >
-                  <span>Calculate Trade-in Price (/sell-my-phone/)</span>
-                  <ArrowRight className="w-3.5 h-3.5" />
-                </button>
 
                 <div className="flex items-center justify-center gap-2 text-xs text-slate-400">
                   <span>Or drop by any of our</span>
@@ -1040,7 +1031,7 @@ export const HomeView: React.FC = () => {
               Common Repairs We Fix Daily
             </h2>
             <p className="text-sm text-slate-500 mt-1 max-w-xl">
-              From iPhone and Samsung OLED screens to MacBook logic board repairs. Select an issue to see transparent prices and book immediately.
+              From iPhone and Samsung OLED screens to MacBook logic board repairs. Select an issue to request a tailored repair quote from our team.
             </p>
           </div>
           <button 
@@ -1069,8 +1060,8 @@ export const HomeView: React.FC = () => {
                     {issue.id === 'camera' && <Wrench className="w-6 h-6" />}
                   </div>
                   <div className="text-right">
-                    <span className="text-[11px] text-slate-400 block">From</span>
-                    <span className="text-lg font-bold text-slate-900 tabular-nums">£{issue.basePrice}</span>
+                    <span className="text-[11px] text-slate-400 block">Repair Quote</span>
+                    <span className="text-xs font-bold text-[#DF0C88]">After Submission</span>
                   </div>
                 </div>
 

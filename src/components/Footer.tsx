@@ -351,21 +351,12 @@ export const Footer: React.FC = () => {
               </li>
               <li>
                 <a 
-                  href="/sell-my-phone/"
-                  onClick={(e) => { e.preventDefault(); setCurrentPage('sell-my-phone'); }} 
-                  className="hover:text-[#DF0C88] transition-colors text-left flex items-center gap-1.5 text-pink-400 font-semibold"
-                >
-                  <span>Sell Your Devices (Instant Cash)</span>
-                </a>
-              </li>
-              <li>
-                <a 
                   href="https://webuyyourtech.co.uk/" 
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-[#DF0C88] transition-colors text-left flex items-center gap-1.5 text-slate-300"
+                  className="hover:text-[#DF0C88] transition-colors text-left flex items-center gap-1.5 text-pink-400 font-semibold"
                 >
-                  <span>Sell on WeBuyYourTech.co.uk</span>
+                  <span>Sell Your Phone on WeBuyYourTech.co.uk</span>
                   <ExternalLink className="w-3 h-3 shrink-0 text-pink-400" />
                 </a>
               </li>
@@ -501,9 +492,14 @@ export const Footer: React.FC = () => {
 
           {/* Policy & Navigation Links */}
           <div className="flex flex-wrap items-center gap-4 text-[11px] text-slate-400">
-            <button onClick={() => setCurrentPage('sell-my-phone')} className="text-white hover:text-[#DF0C88] font-bold transition-colors">
-              Sell Your Devices
-            </button>
+            <a
+              href="https://webuyyourtech.co.uk/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-[#DF0C88] font-bold transition-colors"
+            >
+              Sell Your Phone
+            </a>
             <span>·</span>
             <button onClick={() => setCurrentPage('account')} className="text-white hover:text-[#DF0C88] font-bold transition-colors">
               My Account

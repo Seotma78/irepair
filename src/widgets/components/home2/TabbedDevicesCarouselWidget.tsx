@@ -254,6 +254,14 @@ export const TabbedDevicesCarouselWidget: React.FC<WidgetRenderProps> = ({ setti
       viewProductDetail(item._product);
       return;
     }
+    if (item.link && (item.link.startsWith('http://') || item.link.startsWith('https://'))) {
+      window.open(item.link, '_blank', 'noopener,noreferrer');
+      return;
+    }
+    if (item.tab === 'buybacks') {
+      window.open('https://webuyyourtech.co.uk/', '_blank', 'noopener,noreferrer');
+      return;
+    }
     if (item.tab === 'repairs') {
       startRepairBooking({
         brand: item.brand || 'apple',

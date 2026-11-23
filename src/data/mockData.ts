@@ -982,7 +982,7 @@ export const BLOG_POSTS: BlogPost[] = [
 export const FAQS = [
   {
     question: 'How does the iRepair Phone Buyback & Trade-In service work?',
-    answer: 'Visit our dedicated sell page (/sell-my-phone/) or our partner buyback portal at webuyyourtech.co.uk to select your phone brand, model, storage, and condition for an instant guaranteed valuation with a 14-day price lock. You can also walk into any of our 8 UK high street branches for an instant in-person evaluation and walk out with cash in 15 minutes, or post your phone with a free prepaid Royal Mail tracked pack.',
+    answer: 'Visit our partner buyback portal at webuyyourtech.co.uk to select your phone brand, model, storage, and condition for an instant guaranteed valuation with a 14-day price lock. You can also walk into any of our 8 UK high street branches for an instant in-person evaluation and walk out with cash in 15 minutes, or post your phone with a free prepaid Royal Mail tracked pack.',
   },
   {
     question: 'Do you buy damaged, cracked, or broken phones?',

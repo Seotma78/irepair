@@ -81,8 +81,8 @@ export const ServicesView: React.FC = () => {
                     <IconComponent className="w-6 h-6" />
                   </div>
                   <div className="text-right">
-                    <span className="text-[11px] text-slate-400 block font-medium">Starting from</span>
-                    <span className="text-xl font-bold text-slate-900 tabular-nums">£{service.basePrice}</span>
+                    <span className="text-[11px] text-slate-400 block font-medium">Repair Quote</span>
+                    <span className="text-xs font-bold text-[#DF0C88]">After Submission</span>
                   </div>
                 </div>
 
@@ -116,7 +116,7 @@ export const ServicesView: React.FC = () => {
                   className="w-full bg-slate-900 group-hover:bg-[#DF0C88] text-white font-semibold py-2.5 px-4 rounded-xl text-xs flex items-center justify-center gap-2 transition-colors active:scale-[0.98]"
                 >
                   <Wrench className="w-3.5 h-3.5" />
-                  <span>Book This Repair Online</span>
+                  <span>Request Quote &amp; Book</span>
                   <ArrowRight className="w-3.5 h-3.5" />
                 </button>
               </div>

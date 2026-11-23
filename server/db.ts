@@ -995,7 +995,7 @@ async function initializeSchemaAndSeeds(db: DatabaseWrapper) {
     const initialFaqs = [
       {
         q: 'How does the iRepair Phone Buyback & Trade-In service work?',
-        a: 'Visit our dedicated sell page at /sell-my-phone/ or partner buyback portal at webuyyourtech.co.uk to select your phone brand, model, storage, and condition for an instant guaranteed valuation with a 14-day price lock. You can also walk into any of our 8 UK high street branches for an instant in-person evaluation and walk out with cash in 15 minutes, or post your phone with a free prepaid Royal Mail tracked pack.',
+        a: 'Visit our partner buyback portal at webuyyourtech.co.uk to select your phone brand, model, storage, and condition for an instant guaranteed valuation with a 14-day price lock. You can also walk into any of our 8 UK high street branches for an instant in-person evaluation and walk out with cash in 15 minutes, or post your phone with a free prepaid Royal Mail tracked pack.',
         cat: 'trade-in',
       },
       {
@@ -1638,7 +1638,7 @@ async function initializeSchemaAndSeeds(db: DatabaseWrapper) {
       { id: 'm4', label: 'Services', url: '/services', type: 'internal', target: '_self' },
       { id: 'm5', label: 'Store Locations', url: '/locations', type: 'internal', target: '_self' },
       { id: 'm6', label: 'Track Repair', url: '/track-repair', type: 'internal', target: '_self' },
-      { id: 'm7', label: 'Sell Your Devices', url: '/sell-my-phone/', type: 'internal', target: '_self', badge: 'Trade-in' },
+      { id: 'm7', label: 'Sell Your Phone', url: 'https://webuyyourtech.co.uk/', type: 'external', target: '_blank', badge: 'Trade-in' },
       { id: 'm8', label: 'About', url: '/about', type: 'internal', target: '_self' },
       { id: 'm9', label: 'Contact', url: '/contact', type: 'internal', target: '_self' },
     ];
@@ -1993,11 +1993,11 @@ async function initializeSchemaAndSeeds(db: DatabaseWrapper) {
         },
         settings: {
           columnsDesktop: 3,
-          columnsTablet: 2,
+          columnsTablet: 3,
           columnsMobile: 1,
-          gap: 24,
+          gap: 20,
           borderRadius: 16,
-          cardMinHeight: 340,
+          cardMinHeight: 260,
           overlayOpacity: 0.15,
           accentColor: '#E6007E',
           cards: [
@@ -2013,13 +2013,13 @@ async function initializeSchemaAndSeeds(db: DatabaseWrapper) {
             },
             {
               id: 'card_sell_01',
-              heading: 'Sell & Get Instant Cash',
+              heading: 'Sell Your Phone for Cash',
               subheading: 'Fair quotes & fast bank payouts',
               buttonText: 'Sell Now',
-              buttonLink: '/sell-my-phone/',
+              buttonLink: 'https://webuyyourtech.co.uk/',
               bgImage: 'https://irepair-mobiles.co.uk/wp-content/uploads/2025/10/Sell-Your-Phone.webp',
               altText: 'Store interior with staff and customers',
-              isExternal: false,
+              isExternal: true,
             },
             {
               id: 'card_upgrade_01',
@@ -2609,7 +2609,7 @@ async function initializeSchemaAndSeeds(db: DatabaseWrapper) {
           primaryButtonText: 'Browse All Deals',
           primaryButtonLink: '#products',
           secondaryButtonText: 'Sell Your Old Phone',
-          secondaryButtonLink: '/sell-my-phone/',
+          secondaryButtonLink: 'https://webuyyourtech.co.uk/',
         },
       },
       {
@@ -3518,6 +3518,26 @@ async function initializeSchemaAndSeeds(db: DatabaseWrapper) {
           }
           if (sec.id === 'sec_hero_promo_cards_home' || sec.type === 'hero_promo_cards') {
             if (!sec.settings) sec.settings = {};
+            if (sec.settings.columnsDesktop !== 3) {
+              sec.settings.columnsDesktop = 3;
+              modified = true;
+            }
+            if (sec.settings.columnsTablet !== 3) {
+              sec.settings.columnsTablet = 3;
+              modified = true;
+            }
+            if (sec.settings.columnsMobile !== 1) {
+              sec.settings.columnsMobile = 1;
+              modified = true;
+            }
+            if (!sec.settings.cardMinHeight || sec.settings.cardMinHeight > 260) {
+              sec.settings.cardMinHeight = 260;
+              modified = true;
+            }
+            if (sec.settings.gap === 24) {
+              sec.settings.gap = 20;
+              modified = true;
+            }
             if (sec.settings.accentColor === '#D81B80') {
               sec.settings.accentColor = '#E6007E';
               modified = true;
@@ -3539,15 +3559,23 @@ async function initializeSchemaAndSeeds(db: DatabaseWrapper) {
                         : card.subheading,
                   };
                 }
-                if (card.heading === 'Sell Your Phone And Get Instant Cash') {
+                if (
+                  card.id === 'card_sell_01' ||
+                  card.id === 'promo_sell' ||
+                  card.heading === 'Sell Your Phone And Get Instant Cash' ||
+                  card.heading === 'Sell & Get Instant Cash' ||
+                  card.buttonLink === '/sell-my-phone/'
+                ) {
                   modified = true;
                   return {
                     ...card,
-                    heading: 'Sell & Get Instant Cash',
+                    heading: 'Sell Your Phone for Cash',
                     subheading:
                       card.subheading === 'Instant cash for your old device.'
                         ? 'Fair quotes & fast bank payouts'
                         : card.subheading,
+                    buttonLink: 'https://webuyyourtech.co.uk/',
+                    isExternal: true,
                   };
                 }
                 if (card.heading === 'Upgrade And Save Big') {
@@ -3721,12 +3749,111 @@ async function initializeSchemaAndSeeds(db: DatabaseWrapper) {
           modified = true;
         }
 
+        // Update bright hero quote button copy so it directs users to request a quote rather than instant numeric pricing
+        sections.forEach((sec: any) => {
+          if (sec.type === 'hero_bright_slider' && sec.settings?.quoteButtonText === 'Get Instant Quote & Book') {
+            sec.settings.quoteButtonText = 'Request Quote & Book';
+            modified = true;
+          }
+        });
+
         if (modified) {
           db.run('UPDATE pages SET sections_json = ?, updated_at = ? WHERE slug = ?', [JSON.stringify(sections), now, 'home']);
         }
       } catch (err) {
         console.error('Failed to migrate home sections for trending phones:', err);
       }
+    }
+
+    // Migrate primary menu item m7, shop page CTA, and home-2 sections to link sell buttons directly to webuyyourtech.co.uk and remove repair/buyback prices
+    try {
+      const priMenuRow = db.get<{ id: string; items_json: string }>('SELECT id, items_json FROM menus WHERE location = ?', ['primary']);
+      if (priMenuRow && priMenuRow.items_json) {
+        const items = JSON.parse(priMenuRow.items_json);
+        let menuModified = false;
+        const updatedItems = items.map((item: any) => {
+          if (item.id === 'm7' || item.url === '/sell-my-phone/') {
+            menuModified = true;
+            return {
+              ...item,
+              label: 'Sell Your Phone',
+              url: 'https://webuyyourtech.co.uk/',
+              type: 'external',
+              target: '_blank',
+            };
+          }
+          return item;
+        });
+        if (menuModified) {
+          db.run('UPDATE menus SET items_json = ?, updated_at = ? WHERE id = ?', [JSON.stringify(updatedItems), now, priMenuRow.id]);
+        }
+      }
+
+      const shopPageRow = db.get<{ id: string; sections_json: string }>('SELECT id, sections_json FROM pages WHERE slug = ?', ['shop']);
+      if (shopPageRow && shopPageRow.sections_json) {
+        const shopSecs = JSON.parse(shopPageRow.sections_json);
+        let shopModified = false;
+        shopSecs.forEach((sec: any) => {
+          if (sec.settings?.secondaryButtonLink === '/sell-my-phone/') {
+            sec.settings.secondaryButtonLink = 'https://webuyyourtech.co.uk/';
+            shopModified = true;
+          }
+        });
+        if (shopModified) {
+          db.run('UPDATE pages SET sections_json = ?, updated_at = ? WHERE id = ?', [JSON.stringify(shopSecs), now, shopPageRow.id]);
+        }
+      }
+
+      const home2Row = db.get<{ id: string; sections_json: string }>('SELECT id, sections_json FROM pages WHERE slug = ?', ['home-2']);
+      if (home2Row && home2Row.sections_json) {
+        const h2Secs = JSON.parse(home2Row.sections_json);
+        let h2Modified = false;
+        h2Secs.forEach((sec: any) => {
+          if (sec.type === 'hero_split_quick_quote' && sec.settings) {
+            if (sec.settings.secondaryBtnUrl !== 'https://webuyyourtech.co.uk/') {
+              sec.settings.secondaryBtnUrl = 'https://webuyyourtech.co.uk/';
+              h2Modified = true;
+            }
+            if (sec.settings.quoteMode !== 'repair') {
+              sec.settings.quoteMode = 'repair';
+              h2Modified = true;
+            }
+          }
+          if (sec.type === 'quick_service_cards_strip' && Array.isArray(sec.settings?.cards)) {
+            sec.settings.cards = sec.settings.cards.map((c: any) => {
+              if (c.link === '/sell-my-phone/') {
+                h2Modified = true;
+                return { ...c, link: 'https://webuyyourtech.co.uk/' };
+              }
+              return c;
+            });
+          }
+          if (sec.type === 'tabbed_devices_carousel' && sec.settings) {
+            if (sec.settings.enableBuybacksTab !== false) {
+              sec.settings.enableBuybacksTab = false;
+              h2Modified = true;
+            }
+            if (Array.isArray(sec.settings.customItems)) {
+              sec.settings.customItems = sec.settings.customItems.map((it: any) => {
+                if (it.tab === 'repairs' && typeof it.priceValue === 'string' && it.priceValue.includes('£')) {
+                  h2Modified = true;
+                  return { ...it, priceLabel: 'Repair Quote', priceValue: 'After Submit' };
+                }
+                if (it.link === '/sell-my-phone/') {
+                  h2Modified = true;
+                  return { ...it, link: 'https://webuyyourtech.co.uk/' };
+                }
+                return it;
+              });
+            }
+          }
+        });
+        if (h2Modified) {
+          db.run('UPDATE pages SET sections_json = ?, updated_at = ? WHERE id = ?', [JSON.stringify(h2Secs), now, home2Row.id]);
+        }
+      }
+    } catch (sellMigErr) {
+      console.error('Failed to migrate sell links / home-2 sections:', sellMigErr);
     }
     // Self-healing check for blog post featured images
     try {

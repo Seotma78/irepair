@@ -209,6 +209,6 @@ export const HERO_BRIGHT_SLIDER_DEFAULTS: HeroBrightSliderSettings = {
   subheadlineColor: '#475569',
   ctaBgColor: '#EC008C',
   ctaTextColor: '#FFFFFF',
-  quoteButtonText: 'Get Instant Quote & Book',
+  quoteButtonText: 'Request Quote & Book',
   slides: HERO_BRIGHT_SLIDER_SEEDED_SLIDES,
 };
