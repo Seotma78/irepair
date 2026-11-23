@@ -31,6 +31,20 @@ export const AdminLoginView: React.FC<AdminLoginViewProps> = ({ onSuccess }) => 
     robotsMeta.setAttribute('content', 'noindex, nofollow');
   }, []);
 
+  const parseJsonSafely = async (res: Response) => {
+    const raw = await res.text();
+    if (!raw) return {};
+    try {
+      return JSON.parse(raw);
+    } catch {
+      return {
+        error: res.ok
+          ? 'Unexpected server response format.'
+          : `Authentication request failed (HTTP ${res.status}). Please verify the Node server is running.`,
+      };
+    }
+  };
+
   const handleLoginSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
@@ -39,14 +53,21 @@ export const AdminLoginView: React.FC<AdminLoginViewProps> = ({ onSuccess }) => 
     try {
       const res = await fetch('/api/auth/login', {
         method: 'POST',
+        credentials: 'same-origin',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password }),
       });
 
-      const data = await res.json();
+      const data = await parseJsonSafely(res);
 
       if (!res.ok) {
-        setError(data.error || 'Failed to authenticate');
+        setError(data.error || `Failed to authenticate (HTTP ${res.status})`);
+        setLoading(false);
+        return;
+      }
+
+      if (!data.user || !data.token) {
+        setError('Invalid authentication response from server.');
         setLoading(false);
         return;
       }
@@ -83,6 +104,7 @@ export const AdminLoginView: React.FC<AdminLoginViewProps> = ({ onSuccess }) => 
     try {
       const res = await fetch('/api/auth/change-password', {
         method: 'POST',
+        credentials: 'same-origin',
         headers: {
           'Content-Type': 'application/json',
           Authorization: `Bearer ${tempToken}`,
@@ -90,9 +112,9 @@ export const AdminLoginView: React.FC<AdminLoginViewProps> = ({ onSuccess }) => 
         body: JSON.stringify({ newPassword }),
       });
 
-      const data = await res.json();
+      const data = await parseJsonSafely(res);
       if (!res.ok) {
-        setError(data.error || 'Failed to update password');
+        setError(data.error || `Failed to update password (HTTP ${res.status})`);
         setLoading(false);
         return;
       }

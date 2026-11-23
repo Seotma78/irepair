@@ -80,6 +80,13 @@ customerAuthRouter.post('/register', registerLimiter, async (req: CustomerAuthen
     const cleanFirstName = (firstName || '').trim();
     const cleanLastName = (lastName || '').trim();
 
+    const config = await getWooCommerceConfig();
+    if (!config.consumerKey || !config.consumerSecret) {
+      return res.status(503).json({
+        error: 'Customer store service is not configured yet. Please contact support or configure WooCommerce API credentials.',
+      });
+    }
+
     // Check if customer already exists in WooCommerce
     const existing = await wooGetCustomerByEmail(cleanEmail);
     if (existing) {
@@ -111,7 +118,7 @@ customerAuthRouter.post('/register', registerLimiter, async (req: CustomerAuthen
         displayName: `${customer.first_name} ${customer.last_name}`.trim(),
       }, true);
 
-      setCustomerAuthCookie(res, token, true);
+      setCustomerAuthCookie(res, token, true, req);
 
       return res.status(201).json({
         message: 'Account successfully registered!',
@@ -119,7 +126,9 @@ customerAuthRouter.post('/register', registerLimiter, async (req: CustomerAuthen
       });
     } else {
       console.warn('WooCommerce createCustomer error:', createRes.data);
-      const msg = createRes.data?.message || 'Could not register customer with store backend.';
+      const msg = (typeof createRes.data === 'object' && createRes.data?.message)
+        ? createRes.data.message
+        : 'Could not register customer with store backend.';
       return res.status(400).json({ error: msg });
     }
   } catch (err: any) {
@@ -142,13 +151,25 @@ customerAuthRouter.post('/login', loginLimiter, async (req: CustomerAuthenticate
     const cleanEmail = email.trim().toLowerCase();
     const config = await getWooCommerceConfig();
 
-    // 1. First try WordPress JWT Authentication endpoint if installed on target WP site
+    if (!config.consumerKey || !config.consumerSecret) {
+      return res.status(503).json({
+        error: 'Customer login service is not configured yet. Please configure WooCommerce API credentials.',
+      });
+    }
+
+    // 1. First try WordPress JWT Authentication endpoint if installed on target WP site (0 retries to avoid gateway timeouts)
     let authenticatedUser: any = null;
     try {
-      const jwtRes = await requestWoo('/wp-json/jwt-auth/v1/token', 'POST', {
-        username: cleanEmail,
-        password: password,
-      });
+      const jwtRes = await requestWoo(
+        '/wp-json/jwt-auth/v1/token',
+        'POST',
+        {
+          username: cleanEmail,
+          password: password,
+        },
+        {},
+        0
+      );
 
       if (jwtRes.statusCode === 200 && jwtRes.data?.token) {
         // Authenticated via WP JWT! Get customer details from WooCommerce
@@ -186,7 +207,7 @@ customerAuthRouter.post('/login', loginLimiter, async (req: CustomerAuthenticate
       displayName: `${authenticatedUser.first_name || ''} ${authenticatedUser.last_name || ''}`.trim() || authenticatedUser.username,
     }, Boolean(rememberMe));
 
-    setCustomerAuthCookie(res, token, Boolean(rememberMe));
+    setCustomerAuthCookie(res, token, Boolean(rememberMe), req);
 
     return res.json({
       message: 'Logged in successfully',
@@ -194,7 +215,7 @@ customerAuthRouter.post('/login', loginLimiter, async (req: CustomerAuthenticate
     });
   } catch (err: any) {
     console.error('Customer login error:', err);
-    return res.status(500).json({ error: 'Login service encountered an unexpected error.' });
+    return res.status(503).json({ error: 'Customer login service is temporarily unavailable. Please verify store backend connectivity.' });
   }
 });
 
@@ -211,7 +232,7 @@ customerAuthRouter.get('/me', async (req: CustomerAuthenticatedRequest, res: Res
     // Fetch up-to-date customer data from WooCommerce
     const customer = await wooGetCustomer(payload.customerId);
     if (!customer) {
-      clearCustomerAuthCookie(res);
+      clearCustomerAuthCookie(res, req);
       return res.json({ authenticated: false, customer: null });
     }
 
@@ -229,7 +250,7 @@ customerAuthRouter.get('/me', async (req: CustomerAuthenticatedRequest, res: Res
 // POST /api/customer/logout
 // ==========================================
 customerAuthRouter.post('/logout', (req: CustomerAuthenticatedRequest, res: Response) => {
-  clearCustomerAuthCookie(res);
+  clearCustomerAuthCookie(res, req);
   return res.json({ message: 'Signed out successfully' });
 });
 

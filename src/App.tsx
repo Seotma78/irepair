@@ -403,9 +403,11 @@ export default function App() {
     };
   }, []);
 
+  const normalizedPath = currentPath === '/' ? '/' : currentPath.replace(/\/+$/, '');
+
   return (
     <AppProvider>
-      {currentPath === '/admin-login' ? (
+      {normalizedPath === '/admin-login' ? (
         <AdminProvider>
           <AdminLoginView
             onSuccess={() => {
@@ -415,7 +417,7 @@ export default function App() {
             }}
           />
         </AdminProvider>
-      ) : currentPath.startsWith('/admin') ? (
+      ) : normalizedPath === '/admin' || normalizedPath.startsWith('/admin/') ? (
         <AdminProvider>
           <AdminGate
             onRequireLogin={() => {

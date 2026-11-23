@@ -1,4 +1,4 @@
-import { Router, Response } from 'express';
+import { Router, Request, Response } from 'express';
 import bcrypt from 'bcryptjs';
 import { getDb } from '../db';
 import {
@@ -12,6 +12,12 @@ import {
 } from '../middleware/auth';
 
 export const authRouter = Router();
+
+function isHttpsRequest(req: Request): boolean {
+  const forwardedProto = req.headers['x-forwarded-proto'];
+  const proto = Array.isArray(forwardedProto) ? forwardedProto[0] : forwardedProto;
+  return Boolean(req.secure || (proto && proto.split(',')[0].trim().toLowerCase() === 'https'));
+}
 
 // POST /api/auth/login
 authRouter.post('/login', async (req, res): Promise<any> => {
@@ -74,8 +80,9 @@ authRouter.post('/login', async (req, res): Promise<any> => {
     // Set secure httpOnly cookie
     res.cookie('admin_token', token, {
       httpOnly: true,
-      secure: process.env.NODE_ENV === 'production',
+      secure: isHttpsRequest(req),
       sameSite: 'lax',
+      path: '/',
       maxAge: 7 * 24 * 60 * 60 * 1000, // 7 days
     });
 
@@ -138,8 +145,9 @@ authRouter.post('/change-password', authenticateToken, async (req: Authenticated
 
     res.cookie('admin_token', newToken, {
       httpOnly: true,
-      secure: process.env.NODE_ENV === 'production',
+      secure: isHttpsRequest(req),
       sameSite: 'lax',
+      path: '/',
       maxAge: 7 * 24 * 60 * 60 * 1000,
     });
 
@@ -185,8 +193,9 @@ authRouter.put('/profile', authenticateToken, async (req: AuthenticatedRequest, 
 
     res.cookie('admin_token', newToken, {
       httpOnly: true,
-      secure: process.env.NODE_ENV === 'production',
+      secure: isHttpsRequest(req),
       sameSite: 'lax',
+      path: '/',
       maxAge: 7 * 24 * 60 * 60 * 1000,
     });
 
@@ -204,6 +213,11 @@ authRouter.put('/profile', authenticateToken, async (req: AuthenticatedRequest, 
 
 // POST /api/auth/logout
 authRouter.post('/logout', (req, res) => {
-  res.clearCookie('admin_token');
+  res.clearCookie('admin_token', {
+    httpOnly: true,
+    secure: isHttpsRequest(req),
+    sameSite: 'lax',
+    path: '/',
+  });
   res.json({ success: true, message: 'Logged out successfully.' });
 });

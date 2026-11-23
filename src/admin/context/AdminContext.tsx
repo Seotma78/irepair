@@ -34,15 +34,23 @@ export const AdminProvider: React.FC<{ children: React.ReactNode }> = ({ childre
 
     try {
       const res = await fetch('/api/auth/me', {
+        credentials: 'same-origin',
         headers: {
           Authorization: `Bearer ${savedToken}`,
         },
       });
 
       if (res.ok) {
-        const data = await res.json();
-        setAdminUser(data.user);
-        setToken(savedToken);
+        const raw = await res.text();
+        const data = raw ? JSON.parse(raw) : null;
+        if (data?.user) {
+          setAdminUser(data.user);
+          setToken(savedToken);
+        } else {
+          localStorage.removeItem('admin_token');
+          setAdminUser(null);
+          setToken(null);
+        }
       } else {
         localStorage.removeItem('admin_token');
         setAdminUser(null);
@@ -67,7 +75,7 @@ export const AdminProvider: React.FC<{ children: React.ReactNode }> = ({ childre
 
   const logout = async () => {
     try {
-      await fetch('/api/auth/logout', { method: 'POST' });
+      await fetch('/api/auth/logout', { method: 'POST', credentials: 'same-origin' });
     } catch (e) {}
     localStorage.removeItem('admin_token');
     setToken(null);

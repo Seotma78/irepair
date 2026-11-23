@@ -56,9 +56,12 @@ function getCartToken(req: Request, res?: Response): string {
   if (!token || typeof token !== 'string' || token.length < 8) {
     token = `cart_${Date.now()}_${crypto.randomBytes(8).toString('hex')}`;
     if (res) {
+      const forwardedProto = req.headers['x-forwarded-proto'];
+      const proto = Array.isArray(forwardedProto) ? forwardedProto[0] : forwardedProto;
+      const isHttps = Boolean(req.secure || (proto && proto.split(',')[0].trim().toLowerCase() === 'https'));
       res.cookie('wc_cart_token', token, {
         httpOnly: false, // Accessible to front-end for Store API Cart-Token header
-        secure: process.env.NODE_ENV === 'production',
+        secure: isHttps,
         sameSite: 'lax',
         maxAge: 30 * 24 * 60 * 60 * 1000, // 30 days
         path: '/',

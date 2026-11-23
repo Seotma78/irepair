@@ -68,21 +68,28 @@ export function signCustomerToken(payload: CustomerAuthPayload, rememberMe: bool
   return jwt.sign(payload, JWT_SECRET, { expiresIn });
 }
 
-export function setCustomerAuthCookie(res: Response, token: string, rememberMe: boolean = false) {
+export function isHttpsRequest(req?: Request): boolean {
+  if (!req) return process.env.NODE_ENV === 'production';
+  const forwardedProto = req.headers['x-forwarded-proto'];
+  const proto = Array.isArray(forwardedProto) ? forwardedProto[0] : forwardedProto;
+  return Boolean(req.secure || (proto && proto.split(',')[0].trim().toLowerCase() === 'https'));
+}
+
+export function setCustomerAuthCookie(res: Response, token: string, rememberMe: boolean = false, req?: Request) {
   const maxAge = rememberMe ? 30 * 24 * 60 * 60 * 1000 : 24 * 60 * 60 * 1000;
   res.cookie('wc_customer_token', token, {
     httpOnly: true,
-    secure: process.env.NODE_ENV === 'production',
+    secure: isHttpsRequest(req),
     sameSite: 'lax',
     maxAge,
     path: '/',
   });
 }
 
-export function clearCustomerAuthCookie(res: Response) {
+export function clearCustomerAuthCookie(res: Response, req?: Request) {
   res.clearCookie('wc_customer_token', {
     httpOnly: true,
-    secure: process.env.NODE_ENV === 'production',
+    secure: isHttpsRequest(req),
     sameSite: 'lax',
     path: '/',
   });

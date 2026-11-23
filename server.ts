@@ -4,7 +4,6 @@ import path from 'path';
 import fs from 'fs';
 import https from 'https';
 import cookieParser from 'cookie-parser';
-import { createServer as createViteServer } from 'vite';
 import { getDb } from './server/db';
 import { authRouter } from './server/routes/auth';
 import { cmsRouter, adminCmsRouter } from './server/routes/cms';
@@ -43,6 +42,7 @@ import { getSeoSettings, SeoPageCaptureRecord } from './server/services/seoCaptu
 
 async function startServer() {
   const app = express();
+  app.set('trust proxy', 1);
   const PORT = Number(process.env.PORT) || 3000;
   const isProduction = process.env.NODE_ENV === 'production';
   const DIST_DIR = path.resolve(process.cwd(), 'dist');
@@ -244,10 +244,13 @@ async function startServer() {
   app.use(async (req, res, next) => {
     const reqPath = req.path;
 
-    // Skip API, assets, uploads, and extensions
+    // Skip API, admin routes, wp-json, assets, uploads, and extensions
     if (
       reqPath.startsWith('/api') ||
       reqPath.startsWith('/uploads') ||
+      reqPath === '/admin-login' ||
+      reqPath.startsWith('/admin') ||
+      reqPath.startsWith('/wp-json') ||
       reqPath.startsWith('/@') ||
       reqPath.startsWith('/src') ||
       reqPath.startsWith('/node_modules') ||
@@ -262,22 +265,24 @@ async function startServer() {
       return res.redirect(301, `/shop?search=${searchTerm}`);
     }
 
-    // 0.1 Check seo_redirects database table (for legacy pages like /mobile-phone-shop-in-uk/, /mobile-phones-repair/, etc.)
-    try {
-      const db = await getDb();
-      const normalizedPath = reqPath.replace(/\/+$/, '') + '/';
-      const redirectRow = db.get<{ to_path: string; status_code: number }>(
-        'SELECT to_path, status_code FROM seo_redirects WHERE from_path = ? OR from_path = ?',
-        [reqPath, normalizedPath]
-      );
-      if (redirectRow && redirectRow.to_path) {
-        db.run(
-          'UPDATE seo_redirects SET hit_count = hit_count + 1 WHERE from_path = ? OR from_path = ?',
+    // 0.1 Check seo_redirects database table (never redirect root /)
+    if (reqPath !== '/') {
+      try {
+        const db = await getDb();
+        const normalizedPath = reqPath.replace(/\/+$/, '') + '/';
+        const redirectRow = db.get<{ to_path: string; status_code: number }>(
+          'SELECT to_path, status_code FROM seo_redirects WHERE from_path = ? OR from_path = ?',
           [reqPath, normalizedPath]
         );
-        return res.redirect(redirectRow.status_code || 301, redirectRow.to_path);
-      }
-    } catch (_) {}
+        if (redirectRow && redirectRow.to_path) {
+          db.run(
+            'UPDATE seo_redirects SET hit_count = hit_count + 1 WHERE from_path = ? OR from_path = ?',
+            [reqPath, normalizedPath]
+          );
+          return res.redirect(redirectRow.status_code || 301, redirectRow.to_path);
+        }
+      } catch (_) {}
+    }
 
     // 1. Check ?p=ID query parameter (legacy WordPress direct post link)
     if (req.query.p) {
@@ -521,27 +526,27 @@ async function startServer() {
         let output = template;
 
         // Title
-        output = output.replace(/<title>.*?<\/title>/i, `<title>${title}</title>`);
+        output = output.replace(/<title>.*?<\/title>/i, () => `<title>${title}</title>`);
 
         // Meta Description
         if (output.includes('name="description"')) {
-          output = output.replace(/<meta\s+name="description"\s+content=".*?"\s*\/?>/i, `<meta name="description" content="${desc}" />`);
+          output = output.replace(/<meta\s+name="description"\s+content=".*?"\s*\/?>/i, () => `<meta name="description" content="${desc}" />`);
         } else {
-          output = output.replace('</head>', `  <meta name="description" content="${desc}" />\n</head>`);
+          output = output.replace('</head>', () => `  <meta name="description" content="${desc}" />\n</head>`);
         }
 
         // Canonical
         if (output.includes('rel="canonical"')) {
-          output = output.replace(/<link\s+rel="canonical"\s+href=".*?"\s*\/?>/i, `<link rel="canonical" href="${canonical}" />`);
+          output = output.replace(/<link\s+rel="canonical"\s+href=".*?"\s*\/?>/i, () => `<link rel="canonical" href="${canonical}" />`);
         } else {
-          output = output.replace('</head>', `  <link rel="canonical" href="${canonical}" />\n</head>`);
+          output = output.replace('</head>', () => `  <link rel="canonical" href="${canonical}" />\n</head>`);
         }
 
         // Robots
         if (output.includes('name="robots"')) {
-          output = output.replace(/<meta\s+name="robots"\s+content=".*?"\s*\/?>/i, `<meta name="robots" content="${robots}" />`);
+          output = output.replace(/<meta\s+name="robots"\s+content=".*?"\s*\/?>/i, () => `<meta name="robots" content="${robots}" />`);
         } else {
-          output = output.replace('</head>', `  <meta name="robots" content="${robots}" />\n</head>`);
+          output = output.replace('</head>', () => `  <meta name="robots" content="${robots}" />\n</head>`);
         }
 
         // Open Graph Tags
@@ -552,9 +557,9 @@ async function startServer() {
           const escapedVal = String(val).replace(/"/g, '&quot;');
           const ogRegex = new RegExp(`<meta\\s+property="${prop}"\\s+content=".*?"\\s*\\/?>`, 'i');
           if (ogRegex.test(output)) {
-            output = output.replace(ogRegex, `<meta property="${prop}" content="${escapedVal}" />`);
+            output = output.replace(ogRegex, () => `<meta property="${prop}" content="${escapedVal}" />`);
           } else {
-            output = output.replace('</head>', `  <meta property="${prop}" content="${escapedVal}" />\n</head>`);
+            output = output.replace('</head>', () => `  <meta property="${prop}" content="${escapedVal}" />\n</head>`);
           }
         }
 
@@ -566,9 +571,9 @@ async function startServer() {
           const escapedVal = String(val).replace(/"/g, '&quot;');
           const twRegex = new RegExp(`<meta\\s+name="${name}"\\s+content=".*?"\\s*\\/?>`, 'i');
           if (twRegex.test(output)) {
-            output = output.replace(twRegex, `<meta name="${name}" content="${escapedVal}" />`);
+            output = output.replace(twRegex, () => `<meta name="${name}" content="${escapedVal}" />`);
           } else {
-            output = output.replace('</head>', `  <meta name="${name}" content="${escapedVal}" />\n</head>`);
+            output = output.replace('</head>', () => `  <meta name="${name}" content="${escapedVal}" />\n</head>`);
           }
         }
 
@@ -585,7 +590,7 @@ async function startServer() {
             } catch (_) {}
           }
           const schemaScript = `  <script type="application/ld+json" class="rank-math-schema-react">\n${schemaOutput}\n  </script>`;
-          output = output.replace('</head>', `${schemaScript}\n</head>`);
+          output = output.replace('</head>', () => `${schemaScript}\n</head>`);
         }
 
         return output;
@@ -811,6 +816,7 @@ async function startServer() {
 
   // Vite middleware in dev or static files in production
   if (!isProduction) {
+    const { createServer: createViteServer } = await import('vite');
     const vite = await createViteServer({
       server: {
         middlewareMode: true,
@@ -840,7 +846,18 @@ async function startServer() {
     });
   } else {
     if (fs.existsSync(DIST_DIR)) {
-      app.use(express.static(DIST_DIR, { maxAge: '1d', etag: true }));
+      app.use(
+        express.static(DIST_DIR, {
+          index: false,
+          maxAge: '1d',
+          etag: true,
+          setHeaders: (res, filePath) => {
+            if (filePath.endsWith('.html')) {
+              res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate');
+            }
+          },
+        })
+      );
       app.get('*', async (req, res) => {
         try {
           const resolution = await resolveRootSlug(req.path);
@@ -850,8 +867,11 @@ async function startServer() {
           const indexHtmlPath = path.join(DIST_DIR, 'index.html');
           let template = fs.readFileSync(indexHtmlPath, 'utf-8');
           template = await injectSeo(template, req.originalUrl, res);
-          res.status(resolution.statusCode || 200).send(template);
-        } catch (_) {
+          res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate');
+          res.status(resolution.statusCode || 200).type('text/html').send(template);
+        } catch (err) {
+          console.error('Production HTML serve error:', err);
+          res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate');
           res.sendFile(path.join(DIST_DIR, 'index.html'));
         }
       });
